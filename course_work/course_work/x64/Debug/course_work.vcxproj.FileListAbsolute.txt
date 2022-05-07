@@ -1,0 +1,11 @@
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\course_work.vcxproj.AssemblyReference.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\course_work.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\course_work.exe
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\course_work.vcxproj.GenerateResource.cache
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\course_work.vcxproj.CopyComplete
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\stdole.dll
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\Microsoft.VisualStudio.Interop.dll
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\coursework.LoginForm.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\coursework.RegisterForm.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\coursework.MainForm.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\x64\Debug\coursework.LoginForm.en-US.resources

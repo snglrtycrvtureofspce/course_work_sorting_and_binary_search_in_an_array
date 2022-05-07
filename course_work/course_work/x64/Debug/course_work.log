@@ -1,0 +1,13 @@
+﻿  LoginForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,24): error C2143: синтаксическая ошибка: отсутствие ")" перед ","
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2661: System::Windows::Forms::MessageBox::Show: нет перегруженной функции, принимающей 0 аргументов
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,67): error C2059: синтаксическая ошибка: ==
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2059: синтаксическая ошибка: )
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(436,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  main.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,24): error C2143: синтаксическая ошибка: отсутствие ")" перед ","
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2661: System::Windows::Forms::MessageBox::Show: нет перегруженной функции, принимающей 0 аргументов
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,67): error C2059: синтаксическая ошибка: ==
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2059: синтаксическая ошибка: )
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(436,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  Создание кода...
