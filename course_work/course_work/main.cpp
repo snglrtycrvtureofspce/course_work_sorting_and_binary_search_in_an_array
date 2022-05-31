@@ -43,7 +43,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 	}
 	else
 	{
-		MessageBox::Show("Authentication Cancelled", "Cancelled", MessageBoxButtons::OK);
+		Application::Exit();
+	//	MessageBox::Show("Authentication Cancelled", "Cancelled", MessageBoxButtons::OK);
 	}
 	return 0;
 }

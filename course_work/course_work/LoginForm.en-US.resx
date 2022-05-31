@@ -118,6 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="английскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="английскийToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="русскийToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="русскийToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Text" xml:space="preserve">
+    <value>Belarussian</value>
+  </data>
+  <data name="локализацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="локализацияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Localization</value>
+  </data>
   <data name="выбратьСамостоятельноToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
@@ -154,8 +178,14 @@
   <data name="красныйToolStripMenuItem.Text" xml:space="preserve">
     <value>Red</value>
   </data>
+  <data name="оформлениеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="оформлениеToolStripMenuItem.Text" xml:space="preserve">
     <value>Design</value>
+  </data>
+  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="выходToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -166,38 +196,65 @@
   <data name="менюToolStripMenuItem.Text" xml:space="preserve">
     <value>Menu</value>
   </data>
+  <data name="оПрограммеToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
   <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 19</value>
   </data>
   <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
     <value>About the program</value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 147</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 29</value>
+    <value>82, 33</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 202</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 29</value>
+    <value>132, 33</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="tbEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 137</value>
+    <value>208, 157</value>
   </data>
   <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 186</value>
+    <value>208, 207</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 235</value>
+    <value>316, 264</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 54</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="llRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 264</value>
+  </data>
+  <data name="llRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 54</value>
+  </data>
   <data name="llRegister.Text" xml:space="preserve">
     <value>Register</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 50</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 71</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Authorization</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -446,6 +503,12 @@
         yMj/BzBQo+x8ihqCAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 152</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 28</value>
+  </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXkAAAF5CAYAAAB6A1o9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -542,6 +605,21 @@
         X//uQy+geL/PO3LMxu88+md6LN2QpMFcn+IxxvHL7i+nuOf+DDqbLqTsBDWzTXcpnU9folPpjfRXFI8h
         2JuuQVqzzTb7H8wl9OtOjE6nAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 207</value>
+  </data>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 28</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 18</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>584, 406</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 9.749999pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Authorization and authentication</value>

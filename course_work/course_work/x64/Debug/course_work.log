@@ -1,13 +1,7 @@
-﻿  LoginForm.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,24): error C2143: синтаксическая ошибка: отсутствие ")" перед ","
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2661: System::Windows::Forms::MessageBox::Show: нет перегруженной функции, принимающей 0 аргументов
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,67): error C2059: синтаксическая ошибка: ==
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2059: синтаксическая ошибка: )
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(436,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+﻿  MainForm.cpp
   main.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,24): error C2143: синтаксическая ошибка: отсутствие ")" перед ","
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2661: System::Windows::Forms::MessageBox::Show: нет перегруженной функции, принимающей 0 аргументов
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,67): error C2059: синтаксическая ошибка: ==
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(435,1): error C2059: синтаксическая ошибка: )
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\BasicsOfAlgorithmizationAndProgramming\course_work\course_work\LoginForm.h(436,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\course_work\LoginForm.h(435,21): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\course_work\RegisterForm.h(486,21): warning C4101: exception: неиспользованная локальная переменная
   Создание кода...
+  main.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\course_work\x64\Debug\course_work.exe

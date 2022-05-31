@@ -10,6 +10,10 @@ namespace coursework {
 	using namespace System::Drawing;
 	using namespace System::Data::SqlClient; // namespace to connect SQL database
 
+	using namespace System::Globalization; // UICulture
+	using namespace System::Threading; // UICulture
+
+
 	/// <summary>
 	/// Ñâîäêà äëÿ LoginForm
 	/// </summary>
@@ -90,8 +94,8 @@ namespace coursework {
 			this->ìåíşToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ëîêàëèçàöèÿToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->àíãëèéñêèéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->ğóññêèéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ğóññêèéToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ğóññêèéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->îôîğìëåíèåToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ñòàíäàğòíûéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -138,7 +142,7 @@ namespace coursework {
 			resources->ApplyResources(this->ëîêàëèçàöèÿToolStripMenuItem, L"ëîêàëèçàöèÿToolStripMenuItem");
 			this->ëîêàëèçàöèÿToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->àíãëèéñêèéToolStripMenuItem,
-					this->ğóññêèéToolStripMenuItem, this->ğóññêèéToolStripMenuItem1
+					this->ğóññêèéToolStripMenuItem1, this->ğóññêèéToolStripMenuItem
 			});
 			this->ëîêàëèçàöèÿToolStripMenuItem->Name = L"ëîêàëèçàöèÿToolStripMenuItem";
 			// 
@@ -148,17 +152,17 @@ namespace coursework {
 			this->àíãëèéñêèéToolStripMenuItem->Name = L"àíãëèéñêèéToolStripMenuItem";
 			this->àíãëèéñêèéToolStripMenuItem->Click += gcnew System::EventHandler(this, &LoginForm::àíãëèéñêèéToolStripMenuItem_Click);
 			// 
-			// ğóññêèéToolStripMenuItem
-			// 
-			resources->ApplyResources(this->ğóññêèéToolStripMenuItem, L"ğóññêèéToolStripMenuItem");
-			this->ğóññêèéToolStripMenuItem->Name = L"ğóññêèéToolStripMenuItem";
-			this->ğóññêèéToolStripMenuItem->Click += gcnew System::EventHandler(this, &LoginForm::ğóññêèéToolStripMenuItem_Click);
-			// 
 			// ğóññêèéToolStripMenuItem1
 			// 
 			resources->ApplyResources(this->ğóññêèéToolStripMenuItem1, L"ğóññêèéToolStripMenuItem1");
 			this->ğóññêèéToolStripMenuItem1->Name = L"ğóññêèéToolStripMenuItem1";
 			this->ğóññêèéToolStripMenuItem1->Click += gcnew System::EventHandler(this, &LoginForm::ğóññêèéToolStripMenuItem1_Click);
+			// 
+			// ğóññêèéToolStripMenuItem
+			// 
+			resources->ApplyResources(this->ğóññêèéToolStripMenuItem, L"ğóññêèéToolStripMenuItem");
+			this->ğóññêèéToolStripMenuItem->Name = L"ğóññêèéToolStripMenuItem";
+			this->ğóññêèéToolStripMenuItem->Click += gcnew System::EventHandler(this, &LoginForm::ğóññêèéToolStripMenuItem_Click);
 			// 
 			// îôîğìëåíèåToolStripMenuItem
 			// 
@@ -284,6 +288,7 @@ namespace coursework {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->menuStrip1);
+			this->KeyPreview = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"LoginForm";
 			this->menuStrip1->ResumeLayout(false);
@@ -300,58 +305,10 @@ namespace coursework {
 	{
 		try
 		{
-			// General
-			this->Text = "Authorization and authentication";
-			this->ìåíşToolStripMenuItem->Text = "Menu";
-			this->ëîêàëèçàöèÿToolStripMenuItem->Text = "Localization";
-			this->îôîğìëåíèåToolStripMenuItem->Text = "Design";
-			this->âûõîäToolStripMenuItem->Text = "Exit";
-			this->îÏğîãğàììåToolStripMenuItem->Text = "About the program";
-			// Localization subgroup
-			this->àíãëèéñêèéToolStripMenuItem->Text = "English";
-			this->ğóññêèéToolStripMenuItem->Text = "Belorussian";
-			this->ğóññêèéToolStripMenuItem1->Text = "Russian";
-			// Design subgroup
-			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem->Text = "Choose by yourself";
-			this->ñòàíäàğòíûéToolStripMenuItem->Text = "Standard";
-			this->ğàíäîìíûéÖâåòToolStripMenuItem->Text = "Random color";
-			this->áåëûéToolStripMenuItem->Text = "White";
-			this->÷¸ğíûéToolStripMenuItem->Text = "Black";
-			this->êğàñíûéToolStripMenuItem->Text = "Red";
-			// Other
-			this->button1->Text = "Login";
-			this->llRegister->Text = "Register";
-		}
-		catch (System::Exception^ exception)
-		{
-			MessageBox::Show(exception->Message);
-		}
-	}
-	private: System::Void ğóññêèéToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) // Belarussian
-	{
-		try
-		{
-			// General
-			this->Text = "À¢òàğûçàöûÿ ³ à¢òıíòûô³êàöûÿ";
-			this->ìåíşToolStripMenuItem->Text = "Ìåíş";
-			this->ëîêàëèçàöèÿToolStripMenuItem->Text = "Ëàêàë³çàöûÿ";
-			this->îôîğìëåíèåToolStripMenuItem->Text = "Àôàğìëåííå";
-			this->âûõîäToolStripMenuItem->Text = "Âûõàä";
-			this->îÏğîãğàììåToolStripMenuItem->Text = "Àá ïğàãğàìå";
-			// Localization subgroup
-			this->àíãëèéñêèéToolStripMenuItem->Text = "Àíãë³éñêàÿ";
-			this->ğóññêèéToolStripMenuItem->Text = "Áåëàğóñê³";
-			this->ğóññêèéToolStripMenuItem1->Text = "Ğóñê³";
-			// Design subgroup
-			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem->Text = "Âûáğàöü ñàìàñòîéíà (ìàëşíà÷àê)";
-			this->ñòàíäàğòíûéToolStripMenuItem->Text = "Ñòàíäàğòíû";
-			this->ğàíäîìíûéÖâåòToolStripMenuItem->Text = "Ğàíäîìíû êîëåğ";
-			this->áåëûéToolStripMenuItem->Text = "Áåëû";
-			this->÷¸ğíûéToolStripMenuItem->Text = "×îğíû";
-			this->êğàñíûéToolStripMenuItem->Text = "×ûğâîíû";
-			// Other
-			this->button1->Text = "Ëàã³í";
-			this->llRegister->Text = "Ğıã³ñòğàöûÿ";
+			this->Controls->Clear();
+			CultureInfo::CurrentUICulture = gcnew CultureInfo("en-US");
+			CultureInfo::CurrentCulture = gcnew CultureInfo("en-US");
+			InitializeComponent();
 		}
 		catch (System::Exception^ exception)
 		{
@@ -362,33 +319,30 @@ namespace coursework {
 	{
 		try
 		{
-			// General
-			this->Text = "Àâòîğèçàöèÿ è àóòåíòèôèêàöèÿ";
-			this->ìåíşToolStripMenuItem->Text = "Ìåíş";
-			this->ëîêàëèçàöèÿToolStripMenuItem->Text = "Ëîêàëèçàöèÿ";
-			this->îôîğìëåíèåToolStripMenuItem->Text = "Îôîğìëåíèå";
-			this->âûõîäToolStripMenuItem->Text = "Âûõîä";
-			this->îÏğîãğàììåToolStripMenuItem->Text = "Î ïğîãğàììå";
-			// Localization subgroup
-			this->àíãëèéñêèéToolStripMenuItem->Text = "Àíãëèéñêèé";
-			this->ğóññêèéToolStripMenuItem->Text = "Áåëîğóññêèé";
-			this->ğóññêèéToolStripMenuItem1->Text = "Ğóññêèé";
-			// Design subgroup
-			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem->Text = "Âûáğàòü ñàìîñòîÿòåëüíî (êàğòèíêà)";
-			this->ñòàíäàğòíûéToolStripMenuItem->Text = "Ñòàíäàğòíûé";
-			this->ğàíäîìíûéÖâåòToolStripMenuItem->Text = "Ğàíäîìíûé öâåò";
-			this->áåëûéToolStripMenuItem->Text = "Áåëûé";
-			this->÷¸ğíûéToolStripMenuItem->Text = "×¸ğíûé";
-			this->êğàñíûéToolStripMenuItem->Text = "Êğàñíûé";
-			// Other
-			this->button1->Text = "Ëîãèí";
-			this->llRegister->Text = "Ğåãèñòğàöèÿ";
+			this->Controls->Clear();
+			CultureInfo::CurrentUICulture = gcnew CultureInfo("");
+			CultureInfo::CurrentCulture = gcnew CultureInfo("");
+			InitializeComponent();
 		}
 		catch (System::Exception^ exception)
 		{
 			MessageBox::Show(exception->Message);
 		}
 	}
+		private: System::Void ğóññêèéToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) // Belarussian
+		{
+			try
+			{
+				this->Controls->Clear();
+				CultureInfo::CurrentUICulture = gcnew CultureInfo("be");
+				CultureInfo::CurrentCulture = gcnew CultureInfo("be");
+				InitializeComponent();
+			}
+			catch (System::Exception^ exception)
+			{
+				MessageBox::Show(exception->Message);
+			}
+		}
 		   // Design
 	private: System::Void âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -432,10 +386,7 @@ namespace coursework {
 	}
 	private: System::Void âûõîäToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		if (MessageBox::Show(, "Âûõîä?", MessageBoxButtons::YesNo) == System::Windows::Forms::DialogResult::Yes)
-		{
-			this->Close();
-		}
+		this->Close();
 	}
 	private: System::Void îÏğîãğàììåToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 	{

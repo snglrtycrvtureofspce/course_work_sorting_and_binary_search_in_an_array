@@ -52,6 +52,9 @@
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LoginForm.be.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.en-US.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
@@ -61,10 +64,15 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.be.resx">
+      <DependentUpon>RegisterForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.en-US.resx">
+      <DependentUpon>RegisterForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyStrings.resx" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\address.png" />

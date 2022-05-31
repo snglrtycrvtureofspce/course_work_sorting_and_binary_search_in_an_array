@@ -62,9 +62,4 @@
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MyStrings.resx">
-      <Filter>Файлы ресурсов</Filter>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>
