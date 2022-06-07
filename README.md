@@ -1,3 +1,4 @@
+# [RU](#курсовая-работа-по-объектно-ориентированному-программированию-на-языке-программирования-c-с-использованием-графического-интерфейса-windows-forms)/[EN](#coursework-on-object-oriented-programming-in-the-c-programming-language-using-the-windows-forms-gui)
 # Coursework on object-oriented programming, in the C++ programming language using the Windows Forms GUI.
 Theme of the course work - "A program for sorting and binary search in an array"
 
