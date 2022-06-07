@@ -41,6 +41,8 @@ Class coursework.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldIni
   Fields:
     User user : Public
     Boolean switchToRegister : Public
+Struct functions: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
 Class coursework.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(User): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
