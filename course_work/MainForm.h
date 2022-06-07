@@ -1,6 +1,8 @@
 #pragma once
 #include "User.h"
 #include "functions.h"
+#include <iostream>
+#include <ctime>
 namespace coursework {
 
 	using namespace System;
@@ -65,6 +67,7 @@ namespace coursework {
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::TextBox^ textBox4;
 
 	private:
 		/// <summary>
@@ -105,6 +108,7 @@ namespace coursework {
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -261,7 +265,7 @@ namespace coursework {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Montserrat", 12));
-			this->label3->Location = System::Drawing::Point(65, 134);
+			this->label3->Location = System::Drawing::Point(97, 134);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(129, 22);
 			this->label3->TabIndex = 27;
@@ -269,7 +273,7 @@ namespace coursework {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(202, 134);
+			this->textBox2->Location = System::Drawing::Point(232, 134);
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(145, 211);
@@ -278,7 +282,7 @@ namespace coursework {
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button1->Location = System::Drawing::Point(69, 159);
+			this->button1->Location = System::Drawing::Point(101, 159);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(125, 91);
 			this->button1->TabIndex = 29;
@@ -289,7 +293,7 @@ namespace coursework {
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button2->Location = System::Drawing::Point(202, 104);
+			this->button2->Location = System::Drawing::Point(232, 104);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(145, 24);
 			this->button2->TabIndex = 30;
@@ -301,16 +305,16 @@ namespace coursework {
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
-			this->label4->Location = System::Drawing::Point(353, 49);
+			this->label4->Location = System::Drawing::Point(405, 49);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(229, 33);
+			this->label4->Size = System::Drawing::Size(244, 33);
 			this->label4->TabIndex = 31;
-			this->label4->Text = L"Сортирвка Хоара";
+			this->label4->Text = L"Сортировка Хоара";
 			// 
 			// button3
 			// 
 			this->button3->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button3->Location = System::Drawing::Point(71, 256);
+			this->button3->Location = System::Drawing::Point(103, 256);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(123, 89);
 			this->button3->TabIndex = 32;
@@ -321,7 +325,7 @@ namespace coursework {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(359, 134);
+			this->textBox3->Location = System::Drawing::Point(411, 134);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(145, 211);
@@ -330,7 +334,7 @@ namespace coursework {
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button4->Location = System::Drawing::Point(359, 104);
+			this->button4->Location = System::Drawing::Point(411, 101);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(145, 24);
 			this->button4->TabIndex = 34;
@@ -338,11 +342,20 @@ namespace coursework {
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &MainForm::button4_Click);
 			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(200, 104);
+			this->textBox4->Multiline = true;
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(26, 24);
+			this->textBox4->TabIndex = 35;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(784, 561);
+			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->button3);
@@ -448,36 +461,67 @@ private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, 
 	MessageBox::Show("In developing", "Error!", MessageBoxButtons::OK);
 }
 	private:
-		int n = 0; // размер динамически неуправляемого Сборщиком мусора массива
-		int* m = nullptr; //поле-указатель на целочисленный неуправляемый массив
-		int i = 0; // поле-индекс очередного элемента массива
+		int rows = 0, cols = 0; // размер динамически неуправляемого Сборщиком мусора массива
+		int** arr = nullptr; // поле-указатель на целочисленный неуправляемый двумерный массив
+		int* arr2 = nullptr;
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) // random arr and conclusion
 {
 	try
 	{
 		this->textBox2->Clear();
-		if (m != nullptr)
+		if (arr != nullptr)
 		{
-			delete[] m;
-			m = nullptr;
-			n = 0;
+			delete[] arr;
+			arr = nullptr;
+			rows = 0;
+			cols = 0;
 		}
-		this->n = Convert::ToInt32(this->textBox1->Text);
-		m = new int[n];
-		if (!m)
+		this->rows = Convert::ToInt32(this->textBox1->Text);
+		this->cols = Convert::ToInt32(this->textBox4->Text);
+		int** arr = new int* [cols];
+		if (!arr)
 		{
-			MessageBox::Show("Не удаётся создать массив на " + n.ToString() + " элементов.");
+			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов.");
 			return;
 		}
+		for (int i = 0; i < rows; i++)
+		{
+			arr[i] = new int[cols];
+			if (!arr[i])
+			{
+				MessageBox::Show("Не удаётся создать массив для строки " + i);
+				return;
+			}
+		}
 		Random^ rn = gcnew Random();
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i < rows; i++)
 		{
-			m[i] = rn->Next(0, 100);
+			for (int j = 0; j < cols; j++)
+			{
+				arr[i][j] = rn->Next(0, 100);
+			}
 		}
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				this->textBox2->Text += arr[i][j].ToString() + "\t";
+			}
+			this->textBox2->Text += "\n";
+		}
+		arr2 = new int[rows * cols];
+		for (int i = 0; i < rows; i++)
 		{
-			this->textBox2->Text += m[i].ToString() + " ";
+			for (int j = 0; j < cols; j++)
+			{
+				arr2[cols * i + j] = arr[i][j];
+			}
 		}
+		/*for (int i = 0; i < rows; i++)
+		{
+			delete[] arr[i];
+			arr[i] = nullptr;
+		}
+		delete[] arr;
+		arr = nullptr;*/
 	}
 	catch (System::FormatException^ exception)
 	{
@@ -490,15 +534,33 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) // random arr size
 {
-	Random^ r = gcnew Random();
-	int a = 10 + (r->Next()) % (99 - 10 + 1);
-	textBox1->Text = a.ToString();
+	try
+	{
+		std::srand(std::time(nullptr));
+		Random^ rn = gcnew Random();
+		int a = 1 + (rn->Next()) % (20 - 1 + 1);
+		int b = 1 + rand() % (20 - 1 + 1);
+		textBox1->Text = a.ToString();
+		textBox4->Text = b.ToString();
+	}
+	catch (System::Exception^ exception)
+	{
+		MessageBox::Show(exception->Message);
+	}
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) // clear
 {
-	this->textBox1->Clear();
-	this->textBox2->Clear();
-	this->textBox3->Clear();
+	try
+	{
+		this->textBox1->Clear();
+		this->textBox2->Clear();
+		this->textBox3->Clear();
+		this->textBox4->Clear();
+	}
+	catch (System::Exception^ exception)
+	{
+		MessageBox::Show(exception->Message);
+	}
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e)
 {
@@ -506,10 +568,10 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	{
 		this->textBox3->Clear();
 		functions first;
-		first.quickSort(this->m, 0, this->n - 1);
-		for (int i = 0; i < n; i++)
+		first.quickSort(this->arr2, 0, (rows * cols) - 1);
+		for (int i = 0; i < (rows * cols); i++)
 		{
-			this->textBox3->Text += m[i].ToString() + " ";
+			this->textBox3->Text += arr2[i].ToString() + " ";
 		}
 	}
 	catch (System::FormatException^ exception)
