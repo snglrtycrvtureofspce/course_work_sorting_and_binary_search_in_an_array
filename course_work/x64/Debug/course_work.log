@@ -1,9 +1,6 @@
-﻿  MainForm.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(539,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  main.cpp
+﻿  main.cpp
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(435,21): warning C4101: exception: неиспользованная локальная переменная
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(539,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(595,23): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\RegisterForm.h(486,21): warning C4101: exception: неиспользованная локальная переменная
-  Создание кода...
   main.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe

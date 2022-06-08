@@ -117,507 +117,332 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>27, 13</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>584, 361</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="английскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;русскийToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="стандартныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="&gt;&gt;менюToolStripMenuItem.Name" xml:space="preserve">
-    <value>менюToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;менюToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 38.25pt</value>
-  </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 184</value>
-  </data>
-  <data name="tbEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 23</value>
-  </data>
-  <data name="русскийToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;выходToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="чёрныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt</value>
-  </data>
-  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        o4eZ2SidT9l1OGRqyBQjfzOSNI6vUnYdDpka4shLfXPki3Pkpb458sU58lLfHPniHHmpb458cY681DdH
-        vjhHXuqbI1+cIy/1zZEvzpGX+ubIF+fIS31z5Itz5KW+OfLFOfJS3xz54hx5qW+OfHGOvNQ3R744R17q
-        myNfnCMv9c2RL86Rl/rmyBfnyEt9c+SLc+SlvjnyxTnyUt8c+eIcealvjnxxjrzUN0e+OEde6psjX5wj
-        L/XNkS/OkZf65sgX58hLfXPki3Pkpb458sU58lLfHPniHHmpb458cY681DdHvjhHXuqbI1+cIy/1zZEv
-        zpGX+ubIF+fIS31z5Itz5KW+OfLFOfJS3xz54hx5qW+OfHGOvNQ3R744R17qmyNfnCMv9c2RL86Rl/rm
-        yBfnyEt9c+SLc+SV2ZYOor+h4+l99CF6Ix1Nj6EdSe1z5Itz5LWxvegEupiyY7dxP6L30v1J7XLki3Pk
-        FeJV+XEUw50ds6vrXbQHqT2OfHGOvG5Jn6PsWC3S9+jXSW1x5Itz5Gu7G11E2XFapg30OFI7HPniHPm6
-        dqVvUnaM1lMM/f6kNjjyxTnyNW1Fp1F2fFbRhbQ7aXqOfHGOfE1/RNmxWWX/RJqeI1+cI1/P9nQ+Zcdm
-        lV1BdyFNy5EvzpGv5wmUHZchii9SaVqOfHGOfD1xT3t2XIboO3Qt0nQc+eIc+VrirZqxj/mvkKbjyBfn
-        yNeyH2XHZMgOI03HkS/Oka8lHjqWHZMhO5Y0HUe+OEe+lkMpOyZD5oev03Lki3Pka3kSZcdkyLxfflqO
-        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
-        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGO
-        fC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2O
-        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
-        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGO
-        fC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2O
-        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
-        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2HUHZMhux40nQc+eIc+VoO
-        oOyYDNkxpOk48sU58rXsQ9kxGbKnkqbjyBfnyNeyHV1K2XEZqnuQpuPIF+fI1/NvlB2XITqftiRNx5Ev
-        zpGvZ8wPX48jTcuRL86Rr2cbOpuyY7PKfkR7kablyBfnyNc0xqv5V5Gm58gX58jXFO+Tf5iy47OKzqWd
-        SNNz5Itz5Ou6MQ0xAHFO3ZPUBke+OEe+tjvQtyg7Tst0Gf0WqR2OfHGOvHahUyg7VosUt0vei9QWR744
-        R14hviR1JF1C2THbVFdQPITM49omR744R14bi2NzLK3lLZyL6UTaj9QuR744R16ZLeju9Ez6R3o7vZPe
-        QM+jAynut1f7HPniHHmpb458cY681DdHvjhHXuqbI1+cIy/1zZEvzpGX+ubIF+fIS31z5Itz5KW+OfLF
-        OfJS3xz54hx5qW+OfHGOvNQ3R744R17qmyNfnCMv9c2RL86Rl/rmyBfnyEt9c+SLc+SlvjnyxTnyUt8c
-        +eIcealvjnxxjrzUN0e+OEde6psjX5wjL/XNkS/OkZf65sgX58hLfXPki3Pkpb458sU58lLfHPniHHmp
-        b458cY681DdHvjhHXuqbI1+cIy/1zZEvzpGX+ubIF3cZZQdpyG5OksZxDmXX4ZCpId+h7CAN2X4kaXib
-        06WUXYdDpoZM8Ve5x5Kk4e1J2TU4dGrI6ZQdpCH7IEka3uGUXYNDp4Z8gLKDNHQPJUnDuRFN8XZsfM6n
-        hryKsgM1dBfR3iRp9bam91F27Q3dZ0kN+WPKDtQYxdA/guLDIUmrsRudTNk1N0ZvITXkQMoO1Jh9jJ5I
-        cdfNTnRdM1tz16Pb0AH0SpribpqNO4LUkHjf7grKDpaZ2aI9hNSYz1B2sMzMFmkD7UhqzNGUHTAzs0X6
-        BKlB+1N2wMzMFul5pAZtSedSdtDMzNaat0U37MWUHTQzs7X0KVLDbk/ZgTMzW0tPITXuXZQdPDOzTRVf
-        bNyB1Lh7UXYAzcw21XNIMxFPiMwOoplZ1vfpBqSZ2JfiCw3ZwTQzu2rPIM3Myyg7mGZmG/cFiideambi
-        oUffpOygmpld2f1JM/UA8sFlZvazOpY0c0dSdnDNrHafpm1IMxePO3g/ZQfZzGr2XboVqRPxBYf/pOxg
-        m1mtLiffh+/QznQmZQfdzGoUn9E9mtSp+OvZVyk7+GbWd/HdmUNJnbsJxZPmspPAzPrsMvoNUhFxD/17
-        KTsZzKyvLqB4ppWK2YKeRT7+wKzfPk67kwq7H32DshPEzOZZvHh7IV2LpM22p6Poh5SdMGY2nz5Jv0jS
-        T7kDvZuyE8fM2i5+4/kJFG/FSpsUY38C+dwbs/aLcT+MtiVpIXtSPPvmHMpOLjObpnhr9SR6OG1F0rrE
-        X//uQy+geL/PO3LMxu88+md6LN2QpMFcn+IxxvHL7i+nuOf+DDqbLqTsBDWzTXcpnU9folPpjfRXFI8h
-        2JuuQVqzzTb7H8wl9OtOjE6nAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 25</value>
-  </data>
-  <data name="белыйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="&gt;&gt;llRegister.Name" xml:space="preserve">
-    <value>llRegister</value>
-  </data>
-  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="стандартныйToolStripMenuItem.Text" xml:space="preserve">
-    <value>Стандартный</value>
-  </data>
-  <data name="красныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;красныйToolStripMenuItem.Name" xml:space="preserve">
-    <value>красныйToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
-    <value>Меню</value>
-  </data>
-  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="llRegister.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;tbEmail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="llRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 235</value>
-  </data>
-  <data name="&gt;&gt;стандартныйToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;английскийToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;русскийToolStripMenuItem.Name" xml:space="preserve">
-    <value>русскийToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;llRegister.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;выбратьСамостоятельноToolStripMenuItem.Name" xml:space="preserve">
-    <value>выбратьСамостоятельноToolStripMenuItem</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Почта</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>LoginForm</value>
-  </data>
-  <data name="русскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="локализацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
-  <data name="&gt;&gt;оПрограммеToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="llRegister.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 40</value>
-  </data>
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 48</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 131</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 18pt</value>
-  </data>
-  <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 186</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;tbPassword.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="tbPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;оформлениеToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbEmail.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 3, 0, 3</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 33</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Авторизация и аутентификация</value>
-  </data>
-  <data name="&gt;&gt;llRegister.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="белыйToolStripMenuItem.Text" xml:space="preserve">
-    <value>Белый</value>
-  </data>
-  <data name="llRegister.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt</value>
-  </data>
-  <data name="локализацияToolStripMenuItem.Text" xml:space="preserve">
-    <value>Локализация</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="выбратьСамостоятельноToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="&gt;&gt;рандомныйЦветToolStripMenuItem.Name" xml:space="preserve">
-    <value>рандомныйЦветToolStripMenuItem</value>
-  </data>
-  <data name="чёрныйToolStripMenuItem.Text" xml:space="preserve">
-    <value>Чёрный</value>
-  </data>
-  <data name="русскийToolStripMenuItem.Text" xml:space="preserve">
-    <value>Белорусский</value>
-  </data>
-  <data name="llRegister.Text" xml:space="preserve">
-    <value>Регистрация</value>
-  </data>
-  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
-  </data>
-  <data name="&gt;&gt;красныйToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="красныйToolStripMenuItem.Text" xml:space="preserve">
-    <value>Красный</value>
-  </data>
-  <data name="рандомныйЦветToolStripMenuItem.Text" xml:space="preserve">
-    <value>Рандомный цвет</value>
-  </data>
-  <data name="рандомныйЦветToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 22</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="llRegister.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 48</value>
-  </data>
-  <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 19</value>
-  </data>
-  <data name="&gt;&gt;tbPassword.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 71</value>
-  </data>
-  <data name="&gt;&gt;белыйToolStripMenuItem.Name" xml:space="preserve">
-    <value>белыйToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;tbEmail.Name" xml:space="preserve">
-    <value>tbEmail</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="оформлениеToolStripMenuItem.Text" xml:space="preserve">
-    <value>Оформление</value>
-  </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="tbEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;локализацияToolStripMenuItem.Name" xml:space="preserve">
-    <value>локализацияToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tbEmail.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;рандомныйЦветToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;чёрныйToolStripMenuItem.Name" xml:space="preserve">
-    <value>чёрныйToolStripMenuItem</value>
-  </data>
-  <data name="tbPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 33</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;оПрограммеToolStripMenuItem.Name" xml:space="preserve">
-    <value>оПрограммеToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 180</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="английскийToolStripMenuItem.Text" xml:space="preserve">
     <value>Английский</value>
   </data>
-  <data name="&gt;&gt;чёрныйToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="русскийToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="русскийToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Text" xml:space="preserve">
+    <value>Белорусский</value>
+  </data>
+  <data name="локализацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="локализацияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Локализация</value>
+  </data>
+  <data name="выбратьСамостоятельноToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
   </data>
   <data name="выбратьСамостоятельноToolStripMenuItem.Text" xml:space="preserve">
     <value>Выбрать самостоятельно (картинка)</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="стандартныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="стандартныйToolStripMenuItem.Text" xml:space="preserve">
+    <value>Стандартный</value>
+  </data>
+  <data name="рандомныйЦветToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
+  </data>
+  <data name="рандомныйЦветToolStripMenuItem.Text" xml:space="preserve">
+    <value>Рандомный цвет</value>
+  </data>
+  <data name="белыйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
+  </data>
+  <data name="белыйToolStripMenuItem.Text" xml:space="preserve">
+    <value>Белый</value>
+  </data>
+  <data name="чёрныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
+  </data>
+  <data name="чёрныйToolStripMenuItem.Text" xml:space="preserve">
+    <value>Чёрный</value>
+  </data>
+  <data name="красныйToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 22</value>
+  </data>
+  <data name="красныйToolStripMenuItem.Text" xml:space="preserve">
+    <value>Красный</value>
   </data>
   <data name="оформлениеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 22</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Пароль</value>
+  <data name="оформлениеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Оформление</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
   </data>
-  <data name="&gt;&gt;выбратьСамостоятельноToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 19</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 3, 0, 3</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>584, 25</value>
   </data>
-  <data name="&gt;&gt;русскийToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 135</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 18pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 131</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 33</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Почта</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 18pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 180</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 33</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tbEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 137</value>
+  </data>
+  <data name="tbEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tbEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 23</value>
+  </data>
+  <data name="tbEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tbEmail.Name" xml:space="preserve">
+    <value>tbEmail</value>
+  </data>
+  <data name="&gt;&gt;tbEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbEmail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbEmail.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 186</value>
+  </data>
+  <data name="tbPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tbPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 23</value>
+  </data>
+  <data name="tbPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Name" xml:space="preserve">
+    <value>tbPassword</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 9.749999pt</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 235</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 48</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Вход</value>
   </data>
-  <data name="&gt;&gt;белыйToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="llRegister.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 9.749999pt</value>
+  </data>
+  <data name="llRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 235</value>
+  </data>
+  <data name="llRegister.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="llRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 48</value>
+  </data>
+  <data name="llRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="llRegister.Text" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="&gt;&gt;llRegister.Name" xml:space="preserve">
+    <value>llRegister</value>
+  </data>
+  <data name="&gt;&gt;llRegister.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;llRegister.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 38.25pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 40</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 71</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Авторизация</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -866,85 +691,260 @@
         yMj/BzBQo+x8ihqCAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="tbPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 135</value>
   </data>
-  <data name="русскийToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="&gt;&gt;стандартныйToolStripMenuItem.Name" xml:space="preserve">
-    <value>стандартныйToolStripMenuItem</value>
-  </data>
-  <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 23</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 18pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
-    <value>О программе</value>
-  </data>
-  <data name="&gt;&gt;выходToolStripMenuItem.Name" xml:space="preserve">
-    <value>выходToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;оформлениеToolStripMenuItem.Name" xml:space="preserve">
-    <value>оформлениеToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Авторизация</value>
-  </data>
-  <data name="&gt;&gt;английскийToolStripMenuItem.Name" xml:space="preserve">
-    <value>английскийToolStripMenuItem</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 235</value>
-  </data>
-  <data name="tbEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 25</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;llRegister.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        o4eZ2SidT9l1OGRqyBQjfzOSNI6vUnYdDpka4shLfXPki3Pkpb458sU58lLfHPniHHmpb458cY681DdH
+        vjhHXuqbI1+cIy/1zZEvzpGX+ubIF+fIS31z5Itz5KW+OfLFOfJS3xz54hx5qW+OfHGOvNQ3R744R17q
+        myNfnCMv9c2RL86Rl/rmyBfnyEt9c+SLc+SlvjnyxTnyUt8c+eIcealvjnxxjrzUN0e+OEde6psjX5wj
+        L/XNkS/OkZf65sgX58hLfXPki3Pkpb458sU58lLfHPniHHmpb458cY681DdHvjhHXuqbI1+cIy/1zZEv
+        zpGX+ubIF+fIS31z5Itz5KW+OfLFOfJS3xz54hx5qW+OfHGOvNQ3R744R17qmyNfnCMv9c2RL86Rl/rm
+        yBfnyEt9c+SLc+SV2ZYOor+h4+l99CF6Ix1Nj6EdSe1z5Itz5LWxvegEupiyY7dxP6L30v1J7XLki3Pk
+        FeJV+XEUw50ds6vrXbQHqT2OfHGOvG5Jn6PsWC3S9+jXSW1x5Itz5Gu7G11E2XFapg30OFI7HPniHPm6
+        dqVvUnaM1lMM/f6kNjjyxTnyNW1Fp1F2fFbRhbQ7aXqOfHGOfE1/RNmxWWX/RJqeI1+cI1/P9nQ+Zcdm
+        lV1BdyFNy5EvzpGv5wmUHZchii9SaVqOfHGOfD1xT3t2XIboO3Qt0nQc+eIc+VrirZqxj/mvkKbjyBfn
+        yNeyH2XHZMgOI03HkS/Oka8lHjqWHZMhO5Y0HUe+OEe+lkMpOyZD5oev03Lki3Pka3kSZcdkyLxfflqO
+        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
+        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGO
+        fC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2O
+        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
+        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGO
+        fC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2O
+        fHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2O
+        fD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2OfD2OfHGOfC2HUHZMhux40nQc+eIc+VoO
+        oOyYDNkxpOk48sU58rXsQ9kxGbKnkqbjyBfnyNeyHV1K2XEZqnuQpuPIF+fI1/NvlB2XITqftiRNx5Ev
+        zpGvZ8wPX48jTcuRL86Rr2cbOpuyY7PKfkR7kablyBfnyNc0xqv5V5Gm58gX58jXFO+Tf5iy47OKzqWd
+        SNNz5Itz5Ou6MQ0xAHFO3ZPUBke+OEe+tjvQtyg7Tst0Gf0WqR2OfHGOvHahUyg7VosUt0vei9QWR744
+        R14hviR1JF1C2THbVFdQPITM49omR744R14bi2NzLK3lLZyL6UTaj9QuR744R16ZLeju9Ez6R3o7vZPe
+        QM+jAynut1f7HPniHHmpb458cY681DdHvjhHXuqbI1+cIy/1zZEvzpGX+ubIF+fIS31z5Itz5KW+OfLF
+        OfJS3xz54hx5qW+OfHGOvNQ3R744R17qmyNfnCMv9c2RL86Rl/rmyBfnyEt9c+SLc+SlvjnyxTnyUt8c
+        +eIcealvjnxxjrzUN0e+OEde6psjX5wjL/XNkS/OkZf65sgX58hLfXPki3Pkpb458sU58lLfHPniHHmp
+        b458cY681DdHvjhHXuqbI1+cIy/1zZEvzpGX+ubIF3cZZQdpyG5OksZxDmXX4ZCpId+h7CAN2X4kaXib
+        06WUXYdDpoZM8Ve5x5Kk4e1J2TU4dGrI6ZQdpCH7IEka3uGUXYNDp4Z8gLKDNHQPJUnDuRFN8XZsfM6n
+        hryKsgM1dBfR3iRp9bam91F27Q3dZ0kN+WPKDtQYxdA/guLDIUmrsRudTNk1N0ZvITXkQMoO1Jh9jJ5I
+        cdfNTnRdM1tz16Pb0AH0SpribpqNO4LUkHjf7grKDpaZ2aI9hNSYz1B2sMzMFmkD7UhqzNGUHTAzs0X6
+        BKlB+1N2wMzMFul5pAZtSedSdtDMzNaat0U37MWUHTQzs7X0KVLDbk/ZgTMzW0tPITXuXZQdPDOzTRVf
+        bNyB1Lh7UXYAzcw21XNIMxFPiMwOoplZ1vfpBqSZ2JfiCw3ZwTQzu2rPIM3Myyg7mGZmG/cFiideambi
+        oUffpOygmpld2f1JM/UA8sFlZvazOpY0c0dSdnDNrHafpm1IMxePO3g/ZQfZzGr2XboVqRPxBYf/pOxg
+        m1mtLiffh+/QznQmZQfdzGoUn9E9mtSp+OvZVyk7+GbWd/HdmUNJnbsJxZPmspPAzPrsMvoNUhFxD/17
+        KTsZzKyvLqB4ppWK2YKeRT7+wKzfPk67kwq7H32DshPEzOZZvHh7IV2LpM22p6Poh5SdMGY2nz5Jv0jS
+        T7kDvZuyE8fM2i5+4/kJFG/FSpsUY38C+dwbs/aLcT+MtiVpIXtSPPvmHMpOLjObpnhr9SR6OG1F0rrE
+        X//uQy+geL/PO3LMxu88+md6LN2QpMFcn+IxxvHL7i+nuOf+DDqbLqTsBDWzTXcpnU9folPpjfRXFI8h
+        2JuuQVqzzTb7H8wl9OtOjE6nAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 184</value>
+  </data>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 25</value>
+  </data>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>584, 361</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Авторизация и аутентификация</value>
+  </data>
+  <data name="&gt;&gt;менюToolStripMenuItem.Name" xml:space="preserve">
+    <value>менюToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;менюToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;локализацияToolStripMenuItem.Name" xml:space="preserve">
+    <value>локализацияToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;локализацияToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;английскийToolStripMenuItem.Name" xml:space="preserve">
+    <value>английскийToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;английскийToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;русскийToolStripMenuItem1.Name" xml:space="preserve">
     <value>русскийToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;русскийToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tbEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 137</value>
+  <data name="&gt;&gt;русскийToolStripMenuItem.Name" xml:space="preserve">
+    <value>русскийToolStripMenuItem</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="&gt;&gt;русскийToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbPassword.Name" xml:space="preserve">
-    <value>tbPassword</value>
+  <data name="&gt;&gt;оформлениеToolStripMenuItem.Name" xml:space="preserve">
+    <value>оформлениеToolStripMenuItem</value>
   </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 25</value>
+  <data name="&gt;&gt;оформлениеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>27, 13</value>
-  </metadata>
+  <data name="&gt;&gt;выбратьСамостоятельноToolStripMenuItem.Name" xml:space="preserve">
+    <value>выбратьСамостоятельноToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;выбратьСамостоятельноToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;стандартныйToolStripMenuItem.Name" xml:space="preserve">
+    <value>стандартныйToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;стандартныйToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;рандомныйЦветToolStripMenuItem.Name" xml:space="preserve">
+    <value>рандомныйЦветToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;рандомныйЦветToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;белыйToolStripMenuItem.Name" xml:space="preserve">
+    <value>белыйToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;белыйToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;чёрныйToolStripMenuItem.Name" xml:space="preserve">
+    <value>чёрныйToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;чёрныйToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;красныйToolStripMenuItem.Name" xml:space="preserve">
+    <value>красныйToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;красныйToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;выходToolStripMenuItem.Name" xml:space="preserve">
+    <value>выходToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;выходToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;оПрограммеToolStripMenuItem.Name" xml:space="preserve">
+    <value>оПрограммеToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;оПрограммеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
