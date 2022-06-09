@@ -73,6 +73,10 @@ namespace coursework {
 
 	private: System::Windows::Forms::Button^ button6;
 	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Label^ label7;
 
 	private:
 		/// <summary>
@@ -118,6 +122,10 @@ namespace coursework {
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -130,7 +138,7 @@ namespace coursework {
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(8, 3, 0, 3);
-			this->menuStrip1->Size = System::Drawing::Size(1155, 25);
+			this->menuStrip1->Size = System::Drawing::Size(1311, 25);
 			this->menuStrip1->TabIndex = 23;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -385,9 +393,7 @@ namespace coursework {
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(125, 24);
 			this->textBox5->TabIndex = 37;
-			this->textBox5->Text = L"Введите число";
 			this->textBox5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->textBox5->Click += gcnew System::EventHandler(this, &MainForm::textBox5_Click);
 			// 
 			// button6
 			// 
@@ -409,11 +415,55 @@ namespace coursework {
 			this->label5->TabIndex = 40;
 			this->label5->Text = L"Массив";
 			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
+			this->label6->Location = System::Drawing::Point(968, 49);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(229, 33);
+			this->label6->TabIndex = 41;
+			this->label6->Text = L"Бинарный поиск";
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(1061, 101);
+			this->textBox6->Multiline = true;
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(27, 24);
+			this->textBox6->TabIndex = 42;
+			this->textBox6->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// button7
+			// 
+			this->button7->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
+			this->button7->Location = System::Drawing::Point(1094, 102);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(118, 24);
+			this->button7->TabIndex = 43;
+			this->button7->Text = L"Поиск";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MainForm::button7_Click);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
+			this->label7->Location = System::Drawing::Point(968, 93);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(87, 33);
+			this->label7->TabIndex = 44;
+			this->label7->Text = L"Ключ:";
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1155, 555);
+			this->ClientSize = System::Drawing::Size(1311, 599);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->button7);
+			this->Controls->Add(this->textBox6);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->textBox5);
@@ -730,9 +780,35 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 		MessageBox::Show(exception->Message);
 	}
 }
-		// click handlers
-private: System::Void textBox5_Click(System::Object^ sender, System::EventArgs^ e){
-	this->textBox5->Clear();
-}
+
+	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int key = Convert::ToInt32(this->textBox6->Text);
+			bool flag = false;
+			int l = 0; // левая граница
+			int r = 9; // правая граница
+			int mid;
+			while ((l <= r) && (flag != true)) {
+				mid = (l + r) / 2; // считываем срединный индекс отрезка [l,r]
+
+				if (arr2[mid] == key) flag = true; //проверяем ключ со серединным элементом
+				if (arr2[mid] > key) r = mid - 1; // проверяем, какую часть нужно отбросить
+				else l = mid + 1;
+			}
+
+			if (flag) MessageBox::Show("Индекс элемента " + key + " в массиве равен: " + mid);
+			else MessageBox::Show("Извините, но такого элемента в массиве нет");
+		}
+		catch (System::FormatException^ exception)
+		{
+			MessageBox::Show(exception->Message);
+		}
+		catch (System::Exception^ exception)
+		{
+			MessageBox::Show(exception->Message);
+		}
+
+	}
 };
 }
