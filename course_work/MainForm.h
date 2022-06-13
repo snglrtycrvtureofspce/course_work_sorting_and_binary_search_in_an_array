@@ -784,21 +784,19 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 		try
 		{
-			int key = Convert::ToInt32(this->textBox6->Text);
-			bool flag = false;
-			int l = 0; // лева€ граница
-			int r = 9; // права€ граница
-			int mid;
-			while ((l <= r) && (flag != true)) {
-				mid = (l + r) / 2; // считываем срединный индекс отрезка [l,r]
-
-				if (arr2[mid] == key) flag = true; //провер€ем ключ со серединным элементом
-				if (arr2[mid] > key) r = mid - 1; // провер€ем, какую часть нужно отбросить
-				else l = mid + 1;
+			functions second;
+			int key = 0;
+			int index = 0; // индекс €чейки с искомым значением
+			key = Convert::ToInt32(this->textBox6->Text);
+			index = second.Search_Binary(arr2, 0, rows * cols, key);
+			if (index >= 0)
+			{
+				MessageBox::Show("»ндекс элемента " + key + " в массиве равен: " + index);
 			}
-
-			if (flag) MessageBox::Show("»ндекс элемента " + key + " в массиве равен: " + mid);
-			else MessageBox::Show("»звините, но такого элемента в массиве нет");
+			else
+			{
+				MessageBox::Show("»звините, но такого элемента в массиве нет");
+			}
 		}
 		catch (System::FormatException^ exception)
 		{
