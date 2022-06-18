@@ -2,16 +2,16 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe</FullPath>
+      <FullPath>C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\course_work.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
   <SatelliteDlls>
     <SatelliteDll>
-      <FullPath>C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\be\course_work.resources.dll</FullPath>
+      <FullPath>C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\be\course_work.resources.dll</FullPath>
     </SatelliteDll>
     <SatelliteDll>
-      <FullPath>C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\en-US\course_work.resources.dll</FullPath>
+      <FullPath>C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\en-US\course_work.resources.dll</FullPath>
     </SatelliteDll>
   </SatelliteDlls>
   <NonRecipeFileRefs />

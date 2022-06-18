@@ -2,13 +2,16 @@
 
 public struct functions
 {
-	void swap(int& first, int& second)
+	void swap(int& first, int& second) // функция обмена значениями между двумя элементами.
+	// Чтобы обменять значения у ОРИГИНАЛОВ значений в main'е,
+	// эта функция принимает ссылки на элементы, то есть константные
+	// указатели на адреса элементов
 	{
 		int t = first;
 		first = second;
 		second = t;
 	}
-	void quickSort(int* m, int left, int right)
+	void quickSort(int* m, int left, int right) // функция быстрой сортировки (рекурсивной или сортировки Хоара)
 	{
 		int leftArrow = left, rightArrow = right, pivot = m[(left + right) / 2];
 		do

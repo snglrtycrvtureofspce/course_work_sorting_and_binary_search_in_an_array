@@ -1,5 +1,6 @@
 #pragma once
 #include "User.h"
+#include "HELP.h"
 #include "functions.h"
 #include <iostream>
 #include <ctime>
@@ -491,8 +492,8 @@ namespace coursework {
 
 		}
 #pragma endregion
-		// Localization
-	private: System::Void английскийToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Локализация
+	private: System::Void английскийToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) { // английский
 		try
 		{
 			this->Controls->Clear();
@@ -505,7 +506,7 @@ namespace coursework {
 			MessageBox::Show(exception->Message);
 		}
 	}
-private: System::Void русскийToolStripMenuItem2_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void русскийToolStripMenuItem2_Click(System::Object^ sender, System::EventArgs^ e) { // русский
 	try
 	{
 		this->Controls->Clear();
@@ -515,10 +516,10 @@ private: System::Void русскийToolStripMenuItem2_Click(System::Object^ sender, Sy
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
-private: System::Void русскийToolStripMenuItem3_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void русскийToolStripMenuItem3_Click(System::Object^ sender, System::EventArgs^ e) { // белорусский
 	try
 	{
 		this->Controls->Clear();
@@ -528,74 +529,81 @@ private: System::Void русскийToolStripMenuItem3_Click(System::Object^ sender, Sy
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
-	   // Design
+	   // Оформление
 
-private: System::Void выбратьСамостоятельноToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	OpenFileDialog^ openDlg = gcnew OpenFileDialog();
-	openDlg->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
+private: System::Void выбратьСамостоятельноToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // Выбрать картинку
+	OpenFileDialog^ openDlg = gcnew OpenFileDialog(); // открыть окно диалога выбора файлов
+	openDlg->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*"; // фильтр формата выбираемых файлов
 	if (System::Windows::Forms::DialogResult::OK == openDlg->ShowDialog())
 	{
-		this->BackgroundImage = Image::FromFile(openDlg->FileName);
+		this->BackgroundImage = Image::FromFile(openDlg->FileName); // задний фон = файл (картинка) выбранная пользователем
 	}
 }
-private: System::Void стандартныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->BackColor = SystemColors::ButtonFace;
+private: System::Void стандартныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // стандартный цвет
+	this->BackColor = SystemColors::ButtonFace; // стандартный цвет заднего цвета фона
 }
-private: System::Void рандомныйЦветToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void рандомныйЦветToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // рандмный цвет
 	try
 	{
-		Random rn;
-		const int r = rn.Next(0, 255);
-		const int g = rn.Next(0, 255);
-		const int b = rn.Next(0, 255);
-		this->BackColor = Color::FromArgb(r, g, b);
+		Random rn; // объявляем переменную рандом
+		// рандомим константы для цвета RGB
+		const int r = rn.Next(0, 255); // (min value, max value)
+		const int g = rn.Next(0, 255); // (min value, max value)
+		const int b = rn.Next(0, 255); // (min value, max value)
+		this->BackColor = Color::FromArgb(r, g, b); // задний цвет фона = рандомный цвет из переменных r, g, b
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
 private: System::Void белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->BackColor = Color::White;
+	this->BackColor = Color::White; // белый цвет заднего цвета фона
 }
 private: System::Void чёрныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->BackColor = Color::Black;
+	this->BackColor = Color::Black; // чёрный цвет заднего цвета фона
 }
 private: System::Void красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->BackColor = Color::Red;
+	this->BackColor = Color::Red; // красный цвет заднего цвета фона
 }
 private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
 }
 private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	MessageBox::Show("In developing", "Error!", MessageBoxButtons::OK);
+	coursework::HELP helpform;
+	helpform.ShowDialog();
 }
 	private:
-		int rows = 0, cols = 0, r = 0;; // размер динамически неуправляемого Сборщиком мусора массива
+		int rows = 0, cols = 0, r = 0;; // размер динамически неуправляемого Сборщиком мусора массива rows (строки), cols (столбцы)
 		int** arr = nullptr; // поле-указатель на целочисленный неуправляемый двумерный массив
-		int* arr2 = nullptr;
+		int* arr2 = nullptr; // поле-указатель на целочисленный неуправляемый одномерный массив arr
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) // random arr and conclusion
 {
 	try
 	{
-		this->textBox2->Clear();
-		this->textBox3->Clear();
-		if (arr != nullptr)
+		this->textBox2->Clear(); // очистка текстового окна
+		this->textBox3->Clear(); // очистка текстового окна
+		if (arr != nullptr) // если массив не равен нулевому указателю
 		{
-			delete[] arr;
-			arr = nullptr;
-			rows = 0;
-			cols = 0;
+			delete[] arr; // уничтожение массива
+			arr = nullptr; // объявление массива нулевым указателем
+			rows = 0; // размер строки
+			cols = 0; // размер столбца
 		}
-		this->rows = Convert::ToInt32(this->textBox1->Text);
-		this->cols = Convert::ToInt32(this->textBox4->Text);
+		this->rows = Convert::ToInt32(this->textBox1->Text); // конвертация введённым пользователем размера строки в целочисисленное значение
+		this->cols = Convert::ToInt32(this->textBox4->Text); // конвертация введённым пользователем размера столбца в целочисисленное значение
+		if (rows >= 21 || cols >= 21) // ограничение на размер строк и столбцов
+		{
+			MessageBox::Show("Размер массива должен быть не больше 20 элементов!"); // вывод сообщения на экран
+			return; // возвращаем
+		}
 		int** arr = new int* [cols];
 		if (!arr)
 		{
-			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов.");
+			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов."); // вывод сообщения на экран
 			return;
 		}
 		for (int i = 0; i < rows; i++)
@@ -603,23 +611,23 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			arr[i] = new int[cols];
 			if (!arr[i])
 			{
-				MessageBox::Show("Не удаётся создать массив для строки " + i);
+				MessageBox::Show("Не удаётся создать массив для строки " + i); // вывод сообщения на экран
 				return;
 			}
 		}
-		Random^ rn = gcnew Random();
+		std::srand(std::time(nullptr)); // функция инициализации рандома (возвращает количество секунд, прошедших
 		for (int i = 0; i < rows; i++)
 		{
 			for (int j = 0; j < cols; j++)
 			{
-				arr[i][j] = rn->Next(0, 100);
+				arr[i][j] = 1 + rand() % (20 - 1 + 1); // формула функции рандома - a + rand() % (b - a + 1)
 			}
 		}
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
-				this->textBox2->Text += arr[i][j].ToString() + "\t";
+				this->textBox2->Text += arr[i][j].ToString() + "\t"; // конвертация элементов массива в строку и перенос в текстовое поле
 			}
-			this->textBox2->Text += "\n";
+			this->textBox2->Text += "\n"; // добавление табуляции в текстовое поле
 		}
 		arr2 = new int[rows * cols];
 		for (int i = 0; i < rows; i++)
@@ -632,54 +640,55 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	catch (System::FormatException^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) // random arr size
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) // рандом размер массива
 {
 	try
 	{
-		std::srand(std::time(nullptr));
-		Random^ rn = gcnew Random();
+		std::srand(std::time(nullptr)); // функция инициализации рандома (возвращает количество секунд, прошедших
+		// с 00:00:00 часов по Гринвичу, число будет меняться при каждом запуске (требуется для постоянного рандома чисел)
+		Random^ rn = gcnew Random(); // объявляем переменную функцией рандом
 		int a = 1 + (rn->Next()) % (20 - 1 + 1);
-		int b = 1 + rand() % (20 - 1 + 1);
-		textBox1->Text = a.ToString();
-		textBox4->Text = b.ToString();
+		int b = 1 + rand() % (20 - 1 + 1); // формула функции рандома - a + rand() % (b - a + 1)
+		textBox1->Text = a.ToString(); // конвертация целочисленной переменной в строку и перенос в текстовое поле
+		textBox4->Text = b.ToString(); // конвертация целочисленной переменной в строку и перенос в текстовое поле
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) // clear
 {
 	try
 	{
-		this->textBox1->Clear();
-		this->textBox2->Clear();
-		this->textBox3->Clear();
-		this->textBox4->Clear();
-		this->textBox5->Clear();
-		delete[] arr;
-		arr = nullptr;
-		delete[] arr2;
-		arr2 = nullptr;
+		this->textBox1->Clear(); // очистка текстового окна
+		this->textBox2->Clear(); // очистка текстового окна
+		this->textBox3->Clear(); // очистка текстового окна
+		this->textBox4->Clear(); // очистка текстового окна
+		this->textBox5->Clear(); // очистка текстового окна
+		delete[] arr; // уничтожение массива
+		arr = nullptr; // объявление массива нулевым указателем
+		delete[] arr2; // уничтожение массива
+		arr2 = nullptr; // объявление массива нулевым указателем
 		r = 0;
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) // shell sort
 {
 	try
 	{
-		this->textBox3->Clear();
+		this->textBox3->Clear(); // очистка текстового окна
 		functions first;
 		first.quickSort(this->arr2, 0, (rows * cols) - 1);
 		for (int i = 0; i < (rows * cols); i++)
@@ -689,41 +698,46 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	catch (System::FormatException^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
-private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) // create array
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) // создание массива
 {
 	try
 	{
-		this->textBox2->Clear();
-		this->textBox3->Clear();
+		this->textBox2->Clear(); // очистка текстового окна
+		this->textBox3->Clear(); // очистка текстового окна
 		if (arr != nullptr)
 		{
-			delete[] arr;
-			arr = nullptr;
-			rows = 0;
-			cols = 0;
+			delete[] arr; // уничтожение массива
+			arr = nullptr; // объявление массива нулевым указателем
+			rows = 0; // размер строки
+			cols = 0; // размер столбца
 		}
 		this->rows = Convert::ToInt32(this->textBox1->Text);
 		this->cols = Convert::ToInt32(this->textBox4->Text);
+		if (rows >= 21 || cols >= 21) // ограничение на размер строк и столбцов
+		{
+			MessageBox::Show("Размер массива должен быть не больше 20 элементов!"); // вывод сообщения на экран
+			return; // возвращаем
+		}
 		int** arr = new int* [cols];
 		if (!arr)
 		{
-			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов.");
-			return;
+			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов."); // вывод сообщения на экран
+			return; // возвращаем
 		}
 		for (int i = 0; i < rows; i++)
 		{
 			arr[i] = new int[cols];
 			if (!arr[i])
 			{
-				MessageBox::Show("Не удаётся создать массив для строки " + i);
-				return;
+				MessageBox::Show("Не удаётся создать массив для строки " + i); // вывод сообщения на экран
+				return; // возвращаем
 			}
 		}
 		for (int i = 0; i < rows; i++)
@@ -744,67 +758,67 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	catch (System::FormatException^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	try
 	{
-		this->textBox2->Clear();
-		this->textBox3->Clear();
-		for (int i = 0; i < (rows * cols); i++)
+		this->textBox2->Clear(); // очистка текстового окна
+		this->textBox3->Clear(); // очистка текстового окна
+		for (int i = 0; i < (rows * cols); i++) // цикл будет выполняться до тех пор, пока он не пройдётся по всему массиву
 		{
 			this->textBox2->Text += arr2[i].ToString() + "\t";
 		}
-		if (r < rows*cols && rows*cols > 0)
+		if (r < rows * cols && rows * cols > 0)
 		{
-			arr2[r] = Convert::ToInt32(this->textBox5->Text);
-			r++;
+			arr2[r] = Convert::ToInt32(this->textBox5->Text); // конвертация введённым пользоваталем ключа ячейки в целочисленное значение
+			r++; // r += 1
 		}
 		else
 		{
-			MessageBox::Show("Массив размерности [" + rows.ToString() + "]" + "[" + cols.ToString() + "] заполнен или не создан.");
+			MessageBox::Show("Массив размерности [" + rows.ToString() + "]" + "[" + cols.ToString() + "] заполнен или не создан."); // вывод сообщения на экран
 		}
 	}
 	catch (System::FormatException^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
 	}
 	catch (System::Exception^ exception)
 	{
-		MessageBox::Show(exception->Message);
+		MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 	}
 }
 
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 		try
 		{
-			functions second;
-			int key = 0;
-			int index = 0; // индекс ячейки с искомым значением
-			key = Convert::ToInt32(this->textBox6->Text);
-			index = second.Search_Binary(arr2, 0, rows * cols, key);
-			if (index >= 0)
+			functions second; // объявление экземпляра структуры
+			int key = 0; // целочисленный ключ ячейки, т.е. искомая переменная
+			int index = 0; // целочисленный индекс ячейки с искомым значением
+			key = Convert::ToInt32(this->textBox6->Text); // конвертация введённым пользоваталем ключа ячейки в целочисленное значение
+			index = second.Search_Binary(arr2, 0, rows * cols, key); // функция бинарного поиска
+			if (index >= 0) // если индекс больше или равен нулю
 			{
-				MessageBox::Show("Индекс элемента " + key + " в массиве равен: " + index);
+				MessageBox::Show("Индекс элемента " + key + " в массиве равен: " + index); // вывод сообщения на экран
 			}
-			else
+			else // иначе
 			{
-				MessageBox::Show("Извините, но такого элемента в массиве нет");
+				MessageBox::Show("Извините, но такого элемента в массиве нет"); // вывод сообщения на экран
 			}
 		}
 		catch (System::FormatException^ exception)
 		{
-			MessageBox::Show(exception->Message);
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
 		}
 		catch (System::Exception^ exception)
 		{
-			MessageBox::Show(exception->Message);
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 		}
 
 	}

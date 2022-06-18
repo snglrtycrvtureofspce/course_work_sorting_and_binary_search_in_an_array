@@ -51,3 +51,4 @@ C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\course_work.vcxproj.C
 C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\course_work.exe
 C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\stdole.dll
 C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\Microsoft.VisualStudio.Interop.dll
+C:\Users\asp1r\Downloads\course_work\course_work\x64\Debug\coursework.HELP.resources
