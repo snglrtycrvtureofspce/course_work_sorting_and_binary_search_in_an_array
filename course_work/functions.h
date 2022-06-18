@@ -1,5 +1,7 @@
 #pragma once
+#include <iostream>
 
+#include "MainForm.h"
 public struct functions
 {
 	void swap(int& first, int& second) // функция обмена значениями между двумя элементами.

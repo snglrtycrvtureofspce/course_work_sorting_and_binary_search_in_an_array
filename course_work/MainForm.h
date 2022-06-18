@@ -78,6 +78,11 @@ namespace coursework {
 	private: System::Windows::Forms::TextBox^ textBox6;
 	private: System::Windows::Forms::Button^ button7;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::ToolStripMenuItem^ ÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ÷òåíèåToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ çàïèñüToolStripMenuItem;
+	private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
+
 
 	private:
 		/// <summary>
@@ -107,6 +112,9 @@ namespace coursework {
 			this->êğàñíûéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->âûõîäToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->îÏğîãğàììåToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->÷òåíèåToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->çàïèñüToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -127,14 +135,15 @@ namespace coursework {
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->ìåíşToolStripMenuItem,
-					this->îÏğîãğàììåToolStripMenuItem
+					this->îÏğîãğàììåToolStripMenuItem, this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -251,6 +260,30 @@ namespace coursework {
 			this->îÏğîãğàììåToolStripMenuItem->Text = L"Î ïğîãğàììå";
 			this->îÏğîãğàììåToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::îÏğîãğàììåToolStripMenuItem_Click);
 			// 
+			// ÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem
+			// 
+			this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->÷òåíèåToolStripMenuItem,
+					this->çàïèñüToolStripMenuItem
+			});
+			this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem->Name = L"÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem";
+			this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem->Size = System::Drawing::Size(153, 19);
+			this->÷òåíèåÈÇàïèñüÔàéëîâToolStripMenuItem->Text = L"×òåíèå è çàïèñü ôàéëîâ";
+			// 
+			// ÷òåíèåToolStripMenuItem
+			// 
+			this->÷òåíèåToolStripMenuItem->Name = L"÷òåíèåToolStripMenuItem";
+			this->÷òåíèåToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->÷òåíèåToolStripMenuItem->Text = L"×òåíèå";
+			this->÷òåíèåToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::÷òåíèåToolStripMenuItem_Click);
+			// 
+			// çàïèñüToolStripMenuItem
+			// 
+			this->çàïèñüToolStripMenuItem->Name = L"çàïèñüToolStripMenuItem";
+			this->çàïèñüToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->çàïèñüToolStripMenuItem->Text = L"Çàïèñü";
+			this->çàïèñüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::çàïèñüToolStripMenuItem_Click);
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
@@ -297,6 +330,7 @@ namespace coursework {
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->ReadOnly = true;
+			this->textBox2->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->textBox2->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->textBox2->Size = System::Drawing::Size(326, 211);
 			this->textBox2->TabIndex = 28;
@@ -455,6 +489,10 @@ namespace coursework {
 			this->label7->Size = System::Drawing::Size(87, 33);
 			this->label7->TabIndex = 44;
 			this->label7->Text = L"Êëş÷:";
+			// 
+			// openFileDialog1
+			// 
+			this->openFileDialog1->FileName = L"openFileDialog1";
 			// 
 			// MainForm
 			// 
@@ -822,5 +860,32 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 		}
 
 	}
+private: System::Void ÷òåíèåToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // ÷òåíèå ôàéëà
+	textBox2->Clear();
+	textBox3->Clear();
+	String^ FileName = ""; // ïåğåìåííàÿ äëÿ õğàíåíèÿ ïóòè ê ôàéëó
+	if (openFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK) // îòêğûâàåì äèàëîãîâîå îêíî åñëè
+		// ïîëüçîâàòåëü íàæàë "ÎÊ"
+	{
+		FileName = openFileDialog1->FileName; // çàïèñûâàåì ïóòü ê âûáğàííîìó ôàéëó
+	}
+	try
+	{
+		StreamReader^ file = File::OpenText(FileName); // îòêğûâàåì ôàéë
+		textBox2->Text = file->ReadToEnd(); // çàïèñûâàåì ñîäåğæèìîå ôàéëà â òåêñòîâîå ïîëå
+	}
+	catch (System::Exception^ exception)
+	{
+		MessageBox::Show(exception->Message); // âûâîä ñîîáùåíèÿ îøèáêè íà ıêğàí
+	}
+}
+private: System::Void çàïèñüToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // çàïèñü ôàéëà
+	StreamWriter^ f = gcnew StreamWriter("test.txt", true);
+	f->Write(textBox2->Text);
+	f->Close();
+	MessageBox::Show(this, "Ôàéë óñïåøíî ñîõğàí¸í", "Ñîîáùåíèå", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	textBox2->Text = "";
+}
+
 };
 }
