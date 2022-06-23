@@ -3,8 +3,6 @@
 #include "HELP.h"
 #include "BinaryTree.h"
 #include "functions.h"
-#include <iostream>
-#include <ctime>
 namespace coursework {
 
 	using namespace System;
@@ -29,7 +27,6 @@ namespace coursework {
 			//
 			//TODO: добавьте код конструктора
 			//
-			panel1->BackColor = Color::AntiqueWhite;
 			bTree = new BinaryTree<int>();
 		}
 
@@ -122,10 +119,10 @@ namespace coursework {
 			this->чёрныйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->красныйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->выходToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->оПрограммеToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->чтениеИЗаписьФайловToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->чтениеToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->записьToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->оПрограммеToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -161,7 +158,7 @@ namespace coursework {
 			// 
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->менюToolStripMenuItem,
-					this->оПрограммеToolStripMenuItem, this->чтениеИЗаписьФайловToolStripMenuItem
+					this->чтениеИЗаписьФайловToolStripMenuItem, this->оПрограммеToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -271,13 +268,6 @@ namespace coursework {
 			this->выходToolStripMenuItem->Text = L"Выход";
 			this->выходToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::выходToolStripMenuItem_Click);
 			// 
-			// оПрограммеToolStripMenuItem
-			// 
-			this->оПрограммеToolStripMenuItem->Name = L"оПрограммеToolStripMenuItem";
-			this->оПрограммеToolStripMenuItem->Size = System::Drawing::Size(94, 19);
-			this->оПрограммеToolStripMenuItem->Text = L"О программе";
-			this->оПрограммеToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::оПрограммеToolStripMenuItem_Click);
-			// 
 			// чтениеИЗаписьФайловToolStripMenuItem
 			// 
 			this->чтениеИЗаписьФайловToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
@@ -302,11 +292,18 @@ namespace coursework {
 			this->записьToolStripMenuItem->Text = L"Запись";
 			this->записьToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::записьToolStripMenuItem_Click);
 			// 
+			// оПрограммеToolStripMenuItem
+			// 
+			this->оПрограммеToolStripMenuItem->Name = L"оПрограммеToolStripMenuItem";
+			this->оПрограммеToolStripMenuItem->Size = System::Drawing::Size(94, 19);
+			this->оПрограммеToolStripMenuItem->Text = L"О программе";
+			this->оПрограммеToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::оПрограммеToolStripMenuItem_Click);
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
-			this->label1->Location = System::Drawing::Point(238, 56);
+			this->label1->Location = System::Drawing::Point(239, 39);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(335, 33);
 			this->label1->TabIndex = 24;
@@ -316,7 +313,7 @@ namespace coursework {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Montserrat", 12));
-			this->label2->Location = System::Drawing::Point(12, 101);
+			this->label2->Location = System::Drawing::Point(13, 84);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(150, 22);
 			this->label2->TabIndex = 25;
@@ -325,7 +322,7 @@ namespace coursework {
 			// textBox1
 			// 
 			this->textBox1->BackColor = System::Drawing::SystemColors::Window;
-			this->textBox1->Location = System::Drawing::Point(174, 101);
+			this->textBox1->Location = System::Drawing::Point(175, 84);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(26, 24);
@@ -336,7 +333,7 @@ namespace coursework {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Montserrat", 12));
-			this->label3->Location = System::Drawing::Point(109, 126);
+			this->label3->Location = System::Drawing::Point(110, 109);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(129, 22);
 			this->label3->TabIndex = 27;
@@ -344,7 +341,7 @@ namespace coursework {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(244, 135);
+			this->textBox2->Location = System::Drawing::Point(245, 118);
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->ReadOnly = true;
@@ -356,7 +353,7 @@ namespace coursework {
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button1->Location = System::Drawing::Point(410, 101);
+			this->button1->Location = System::Drawing::Point(411, 84);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(160, 24);
 			this->button1->TabIndex = 30;
@@ -369,7 +366,7 @@ namespace coursework {
 			this->button2->BackColor = System::Drawing::SystemColors::Control;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
 			this->button2->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button2->Location = System::Drawing::Point(244, 101);
+			this->button2->Location = System::Drawing::Point(245, 84);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(160, 24);
 			this->button2->TabIndex = 30;
@@ -381,7 +378,7 @@ namespace coursework {
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Montserrat", 16));
-			this->label4->Location = System::Drawing::Point(9, 365);
+			this->label4->Location = System::Drawing::Point(10, 348);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(229, 30);
 			this->label4->TabIndex = 31;
@@ -390,7 +387,7 @@ namespace coursework {
 			// button3
 			// 
 			this->button3->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button3->Location = System::Drawing::Point(113, 216);
+			this->button3->Location = System::Drawing::Point(114, 199);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(125, 60);
 			this->button3->TabIndex = 32;
@@ -401,7 +398,7 @@ namespace coursework {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(244, 352);
+			this->textBox3->Location = System::Drawing::Point(245, 335);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->ReadOnly = true;
@@ -412,7 +409,7 @@ namespace coursework {
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button4->Location = System::Drawing::Point(14, 398);
+			this->button4->Location = System::Drawing::Point(15, 381);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(218, 33);
 			this->button4->TabIndex = 34;
@@ -422,7 +419,7 @@ namespace coursework {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(206, 101);
+			this->textBox4->Location = System::Drawing::Point(207, 84);
 			this->textBox4->Multiline = true;
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(26, 24);
@@ -431,7 +428,7 @@ namespace coursework {
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(113, 151);
+			this->button5->Location = System::Drawing::Point(114, 134);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(125, 59);
 			this->button5->TabIndex = 36;
@@ -441,7 +438,7 @@ namespace coursework {
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(16, 186);
+			this->textBox5->Location = System::Drawing::Point(17, 169);
 			this->textBox5->Multiline = true;
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(91, 24);
@@ -450,7 +447,7 @@ namespace coursework {
 			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(16, 216);
+			this->button6->Location = System::Drawing::Point(17, 199);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(91, 60);
 			this->button6->TabIndex = 39;
@@ -462,7 +459,7 @@ namespace coursework {
 			// 
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Montserrat", 12));
-			this->label5->Location = System::Drawing::Point(24, 161);
+			this->label5->Location = System::Drawing::Point(25, 144);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(73, 22);
 			this->label5->TabIndex = 40;
@@ -472,7 +469,7 @@ namespace coursework {
 			// 
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
-			this->label6->Location = System::Drawing::Point(703, 434);
+			this->label6->Location = System::Drawing::Point(1286, 417);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(229, 33);
 			this->label6->TabIndex = 41;
@@ -480,7 +477,7 @@ namespace coursework {
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(796, 490);
+			this->textBox6->Location = System::Drawing::Point(1375, 469);
 			this->textBox6->Multiline = true;
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(27, 24);
@@ -490,7 +487,7 @@ namespace coursework {
 			// button7
 			// 
 			this->button7->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button7->Location = System::Drawing::Point(829, 490);
+			this->button7->Location = System::Drawing::Point(1408, 469);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(103, 24);
 			this->button7->TabIndex = 43;
@@ -502,7 +499,7 @@ namespace coursework {
 			// 
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
-			this->label7->Location = System::Drawing::Point(703, 481);
+			this->label7->Location = System::Drawing::Point(1286, 460);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(87, 33);
 			this->label7->TabIndex = 44;
@@ -514,16 +511,18 @@ namespace coursework {
 			// 
 			// panel1
 			// 
+			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->panel1->Font = (gcnew System::Drawing::Font(L"Montserrat", 12));
-			this->panel1->Location = System::Drawing::Point(586, 135);
+			this->panel1->Location = System::Drawing::Point(587, 118);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(484, 296);
+			this->panel1->Size = System::Drawing::Size(693, 428);
 			this->panel1->TabIndex = 45;
 			// 
 			// richTextBox1
 			// 
 			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Montserrat", 15));
-			this->richTextBox1->Location = System::Drawing::Point(1076, 135);
+			this->richTextBox1->Location = System::Drawing::Point(1292, 118);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->ReadOnly = true;
 			this->richTextBox1->Size = System::Drawing::Size(176, 296);
@@ -534,7 +533,7 @@ namespace coursework {
 			// 
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Montserrat", 10));
-			this->label8->Location = System::Drawing::Point(1076, 101);
+			this->label8->Location = System::Drawing::Point(1292, 84);
 			this->label8->Name = L"label8";
 			this->label8->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->label8->Size = System::Drawing::Size(73, 20);
@@ -545,7 +544,7 @@ namespace coursework {
 			// 
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Montserrat", 10));
-			this->label9->Location = System::Drawing::Point(1155, 101);
+			this->label9->Location = System::Drawing::Point(1371, 84);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(97, 20);
 			this->label9->TabIndex = 48;
@@ -554,9 +553,9 @@ namespace coursework {
 			// button8
 			// 
 			this->button8->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button8->Location = System::Drawing::Point(586, 101);
+			this->button8->Location = System::Drawing::Point(587, 84);
 			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(235, 24);
+			this->button8->Size = System::Drawing::Size(337, 24);
 			this->button8->TabIndex = 49;
 			this->button8->Text = L"Создать";
 			this->button8->UseVisualStyleBackColor = true;
@@ -565,9 +564,9 @@ namespace coursework {
 			// button9
 			// 
 			this->button9->Font = (gcnew System::Drawing::Font(L"Montserrat", 9));
-			this->button9->Location = System::Drawing::Point(835, 101);
+			this->button9->Location = System::Drawing::Point(943, 84);
 			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(235, 24);
+			this->button9->Size = System::Drawing::Size(337, 24);
 			this->button9->TabIndex = 50;
 			this->button9->Text = L"Очистить";
 			this->button9->UseVisualStyleBackColor = true;
@@ -577,7 +576,7 @@ namespace coursework {
 			// 
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Montserrat", 18));
-			this->label10->Location = System::Drawing::Point(703, 56);
+			this->label10->Location = System::Drawing::Point(704, 39);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(239, 33);
 			this->label10->TabIndex = 51;
@@ -618,7 +617,7 @@ namespace coursework {
 			this->Controls->Add(this->menuStrip1);
 			this->Name = L"MainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"MainForm";
+			this->Text = L"Программа для сортировки и бинарного поиска в массиве";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -714,19 +713,12 @@ private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, 
 		int rows = 0, cols = 0, r = 0;; // размер динамически неуправляемого Сборщиком мусора массива rows (строки), cols (столбцы)
 		int** arr = nullptr; // поле-указатель на целочисленный неуправляемый двумерный массив
 		int* arr2 = nullptr; // поле-указатель на целочисленный неуправляемый одномерный массив arr
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) // random arr and conclusion
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) // рандом массива и его вывод
 {
 	try
 	{
 		this->textBox2->Clear(); // очистка текстового окна
 		this->textBox3->Clear(); // очистка текстового окна
-		if (arr != nullptr) // если массив не равен нулевому указателю
-		{
-			delete[] arr; // уничтожение массива
-			arr = nullptr; // объявление массива нулевым указателем
-			rows = 0; // размер строки
-			cols = 0; // размер столбца
-		}
 		this->rows = Convert::ToInt32(this->textBox1->Text); // конвертация введённым пользователем размера строки в целочисисленное значение
 		this->cols = Convert::ToInt32(this->textBox4->Text); // конвертация введённым пользователем размера столбца в целочисисленное значение
 		if (rows >= 21 || cols >= 21) // ограничение на размер строк и столбцов
@@ -734,8 +726,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			MessageBox::Show("Размер массива должен быть не больше 20 элементов!"); // вывод сообщения на экран
 			return; // возвращаем
 		}
-		int** arr = new int* [cols];
-		if (!arr)
+		int** arr = new int* [rows];
+		if (arr == nullptr) // если массив не равен нулевому указателю
 		{
 			MessageBox::Show("Не удаётся создать массив на " + "[" + rows.ToString() + "]" + "[" + cols.ToString() + "]" + " элементов."); // вывод сообщения на экран
 			return;
@@ -743,18 +735,18 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		for (int i = 0; i < rows; i++)
 		{
 			arr[i] = new int[cols];
-			if (!arr[i])
+			if (arr[i] == nullptr)
 			{
 				MessageBox::Show("Не удаётся создать массив для строки " + i); // вывод сообщения на экран
 				return;
 			}
 		}
-		std::srand(std::time(nullptr)); // функция инициализации рандома (возвращает количество секунд, прошедших
+		Random rn;
 		for (int i = 0; i < rows; i++)
 		{
 			for (int j = 0; j < cols; j++)
 			{
-				arr[i][j] = 1 + rand() % (20 - 1 + 1); // формула функции рандома - a + rand() % (b - a + 1)
+				arr[i][j] = rn.Next(0, 100);
 			}
 		}
 		for (int i = 0; i < rows; i++) {
@@ -785,11 +777,9 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 {
 	try
 	{
-		std::srand(std::time(nullptr)); // функция инициализации рандома (возвращает количество секунд, прошедших
-		// с 00:00:00 часов по Гринвичу, число будет меняться при каждом запуске (требуется для постоянного рандома чисел)
 		Random^ rn = gcnew Random(); // объявляем переменную функцией рандом
-		int a = 1 + (rn->Next()) % (20 - 1 + 1);
-		int b = 1 + rand() % (20 - 1 + 1); // формула функции рандома - a + rand() % (b - a + 1)
+		int a = (rn->Next(1, 20));
+		int b = (rn->Next(1, 20));
 		textBox1->Text = a.ToString(); // конвертация целочисленной переменной в строку и перенос в текстовое поле
 		textBox4->Text = b.ToString(); // конвертация целочисленной переменной в строку и перенос в текстовое поле
 	}

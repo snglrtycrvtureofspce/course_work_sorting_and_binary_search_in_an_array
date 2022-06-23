@@ -8,43 +8,50 @@ using namespace coursework;
 [STAThreadAttribute]
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-	Application::EnableVisualStyles();
-	Application::SetCompatibleTextRenderingDefault(false);
-	User^ user = nullptr;
-	while (true)
+	try
 	{
-		coursework::LoginForm loginForm;
-		loginForm.ShowDialog();
-		if (loginForm.switchToRegister)
+		Application::EnableVisualStyles();
+		Application::SetCompatibleTextRenderingDefault(false);
+		User^ user = nullptr;
+		while (true)
 		{
-			// show the register form
-			coursework::RegisterForm registerForm;
-			registerForm.ShowDialog();
-			if (registerForm.switchToLogin)
+			coursework::LoginForm loginForm;
+			loginForm.ShowDialog();
+			if (loginForm.switchToRegister)
 			{
-				continue;
+				// show the register form
+				coursework::RegisterForm registerForm;
+				registerForm.ShowDialog();
+				if (registerForm.switchToLogin)
+				{
+					continue;
+				}
+				else
+				{
+					user = registerForm.user;
+					break;
+				}
 			}
 			else
 			{
-				user = registerForm.user;
+				user = loginForm.user;
 				break;
 			}
 		}
+		if (user != nullptr)
+		{
+			coursework::MainForm mainForm(user);
+			Application::Run(% mainForm);
+		}
 		else
 		{
-			user = loginForm.user;
-			break;
+			Application::Exit();
+			//	MessageBox::Show("Authentication Cancelled", "Cancelled", MessageBoxButtons::OK);
 		}
+		return 0;
 	}
-	if (user != nullptr)
+	catch (System::Exception^ exception)
 	{
-		coursework::MainForm mainForm(user);
-		Application::Run(% mainForm);
+		MessageBox::Show("exception->Message"); // вывод сообщения ошибки на экран
 	}
-	else
-	{
-		Application::Exit();
-	//	MessageBox::Show("Authentication Cancelled", "Cancelled", MessageBoxButtons::OK);
-	}
-	return 0;
 }
