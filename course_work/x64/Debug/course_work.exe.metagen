@@ -43,8 +43,8 @@ Class coursework.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldIni
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
-    User user : Public
     Boolean switchToRegister : Public
+    User user : Public
 Struct functions: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
   :System.ValueType
 Class coursework.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
@@ -54,5 +54,5 @@ Class coursework.RegisterForm: AutoLayout, AnsiClass, Class, Public, BeforeField
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
-    User user : Public
     Boolean switchToLogin : Public
+    User user : Public

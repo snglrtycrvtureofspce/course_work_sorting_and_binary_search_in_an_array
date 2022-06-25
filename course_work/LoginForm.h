@@ -1,6 +1,6 @@
 #pragma once
 #include "User.h"
-
+#include "HELP.h"
 namespace coursework {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -23,10 +23,8 @@ namespace coursework {
 		LoginForm(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
 		}
+
 
 	protected:
 		/// <summary>
@@ -226,7 +224,6 @@ namespace coursework {
 			// 
 			resources->ApplyResources(this->label1, L"label1");
 			this->label1->Name = L"label1";
-			this->label1->Click += gcnew System::EventHandler(this, &LoginForm::label1_Click);
 			// 
 			// label2
 			// 
@@ -300,115 +297,121 @@ namespace coursework {
 
 		}
 #pragma endregion
-		// Localization
-	private: System::Void английскийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) // English
-	{
+		// Локализация
+	private: System::Void английскийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // английский
 		try
 		{
 			this->Controls->Clear();
 			CultureInfo::CurrentUICulture = gcnew CultureInfo("en-US");
 			CultureInfo::CurrentCulture = gcnew CultureInfo("en-US");
-			InitializeComponent();
+			InitializeComponent(); // инициализирует объекты пользовательского интерфейса
 		}
 		catch (System::Exception^ exception)
 		{
-			MessageBox::Show(exception->Message);
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 		}
 	}
-	private: System::Void русскийToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) // Russian
-	{
+	private: System::Void русскийToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) { // русский
 		try
 		{
 			this->Controls->Clear();
 			CultureInfo::CurrentUICulture = gcnew CultureInfo("");
 			CultureInfo::CurrentCulture = gcnew CultureInfo("");
-			InitializeComponent();
+			InitializeComponent(); // инициализирует объекты пользовательского интерфейса
 		}
 		catch (System::Exception^ exception)
 		{
-			MessageBox::Show(exception->Message);
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 		}
 	}
-		private: System::Void русскийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) // Belarussian
-		{
-			try
-			{
-				this->Controls->Clear();
-				CultureInfo::CurrentUICulture = gcnew CultureInfo("be");
-				CultureInfo::CurrentCulture = gcnew CultureInfo("be");
-				InitializeComponent();
-			}
-			catch (System::Exception^ exception)
-			{
-				MessageBox::Show(exception->Message);
-			}
-		}
-		   // Design
-	private: System::Void выбратьСамостоятельноToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		OpenFileDialog^ openDlg = gcnew OpenFileDialog();
-		openDlg->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
-		if (System::Windows::Forms::DialogResult::OK == openDlg->ShowDialog())
-		{
-			this->BackgroundImage = Image::FromFile(openDlg->FileName);
-		}
-	}
-	private: System::Void стандартныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		this->BackColor = SystemColors::ButtonFace;
-	}
-	private: System::Void рандомныйЦветToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
+	private: System::Void русскийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // белорусский 
 		try
 		{
-			Random rn;
-			const int r = rn.Next(0, 255);
-			const int g = rn.Next(0, 255);
-			const int b = rn.Next(0, 255);
-			this->BackColor = Color::FromArgb(r, g, b);
+			this->Controls->Clear();
+			CultureInfo::CurrentUICulture = gcnew CultureInfo("be");
+			CultureInfo::CurrentCulture = gcnew CultureInfo("be");
+			InitializeComponent(); // инициализирует объекты пользовательского интерфейса
 		}
 		catch (System::Exception^ exception)
 		{
-			MessageBox::Show(exception->Message);
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 		}
 	}
-	private: System::Void белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		this->BackColor = Color::White;
+		   // Оформление
+	private: System::Void выбратьСамостоятельноToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // выбрать картинку
+		try
+		{
+			OpenFileDialog^ openDlg = gcnew OpenFileDialog(); // открыть окно диалога выбора файлов
+			openDlg->Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*"; // фильтр формата выбираемых картинок
+			if (System::Windows::Forms::DialogResult::OK == openDlg->ShowDialog())
+			{
+				this->BackgroundImage = Image::FromFile(openDlg->FileName); // задний фон = файл (картинка) выбранная пользователем
+			}
+		}
+		catch (System::Exception^ exception)
+		{
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
+		}
 	}
-	private: System::Void чёрныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		this->BackColor = Color::Black;
+	private: System::Void стандартныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // стандартный цвет
+		this->BackColor = SystemColors::ButtonFace; // стандартный цвет заднего цвета фона
+		this->BackgroundImage = nullptr; // инициализируем нулевой указатель на картинку заднего фона
 	}
-	private: System::Void красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		this->BackColor = Color::Red;
+	private: System::Void рандомныйЦветToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // рандомный цвет
+		try
+		{
+			Random rn; // объявляем переменную рандом
+			// рандомим константы для цвета RGB
+			const int r = rn.Next(0, 255); // (минимальное значение, максимальное значение)
+			const int g = rn.Next(0, 255); // (минимальное значение, максимальное значение)
+			const int b = rn.Next(0, 255); // (минимальное значение, максимальное значение)
+			this->BackColor = Color::FromArgb(r, g, b); // задний цвет фона = рандомный цвет из переменных r, g, b
+		}
+		catch (System::Exception^ exception)
+		{
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
+		}
 	}
-	private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		this->Close();
+	private: System::Void белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // белый цвет
+		this->BackColor = Color::White; // белый цвет заднего цвета фона
 	}
-	private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		MessageBox::Show("In developing", "Error!", MessageBoxButtons::OK);
+	private: System::Void чёрныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // чёрный цвет
+		this->BackColor = Color::Black; // чёрный цвет заднего цвета фона
 	}
-	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // красный цвет
+		this->BackColor = Color::Red; // красный цвет заднего цвета фона
 	}
-	// Login
-	public: User^ user = nullptr;
+		   // Описание кнопки выхода и справки программы
+	private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // выход из программы
+		this->Close(); // закрытие формы
+	}
+	private: System::Void оПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		coursework::HELP helpform; // создаём переменную для работы с формой
+		helpform.ShowDialog(); // обращаемся к форме и открываем её
+	}
+
+		   // Описание алгоритма кнопки "Регистрация"
+	public: bool switchToRegister = false; // глобальная переменная для переключения к регистрации, изначально инициализируем как ложь (0)
+
+	private: System::Void llRegister_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->switchToRegister = true; // инициализируем переменную истиной (1), алгоритм активизируется
+		this->Close(); // закрытие формы
+	}
+		   // Описание алгоритма логина
+	public: User^ user = nullptr; // глобальная переменная класса пользователь ("User.h"), изначально инициализируем как нулевой указатель
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		String^ email = this->tbEmail->Text;
-		String^ password = this->tbPassword->Text;
-		if (email->Length == 0 || password->Length == 0)
+		String^ email = this->tbEmail->Text; // инициализируем переменную строкового класса данными из текстового поля
+		String^ password = this->tbPassword->Text; // инициализируем переменную строкового класса данными из текстового поля
+		if (email->Length == 0 || password->Length == 0) // проверка на заполнение всех полей
 		{
 			MessageBox::Show("Please enter email and password", "Email or password empty", MessageBoxButtons::OK);
 			return;
 		}
 		try
 		{
-			String^ connString = "Data Source=localhost\\sqlexpress;Initial Catalog=courseWORK;Integrated Security=True";
-			SqlConnection sqlConn(connString);
-			sqlConn.Open();
+			String^ connString = "Data Source=localhost\\sqlexpress;Initial Catalog=courseWORK;Integrated Security=True"; // инициализируем переменную строкового класса адресом подключения к базе данных
+			SqlConnection sqlConn(connString); // задаём адрес для подключения к базе данных
+			sqlConn.Open(); // открываем соединение с базой данных
 
 			String^ sqlQuery = "SELECT * FROM users WHERE email=@email AND password=@password;";
 			SqlCommand command(sqlQuery, % sqlConn);
@@ -425,23 +428,17 @@ namespace coursework {
 				user->phone = reader->GetString(3);
 				user->address = reader->GetString(4);
 				user->password = reader->GetString(5);
-				this->Close();
+				this->Close(); // закрытие формы
 			}
 			else
 			{
-				MessageBox::Show("Email or Password is incorrect", "Email or Password Error", MessageBoxButtons::OK);
+				MessageBox::Show("Email or Password is incorrect", "Email or Password Error", MessageBoxButtons::OK); // вывод сообщения на экран
 			}
 		}
 		catch (Exception^ exception)
 		{
-			MessageBox::Show("Failed to connect to database", "Database Connection Error", MessageBoxButtons::OK);
+			MessageBox::Show("Failed to connect to database", "Database Connection Error", MessageBoxButtons::OK); // вывод сообщения на экран
 		}
-	}
-		// SwitchToRegister button
-	public: bool switchToRegister = false;
-	private: System::Void llRegister_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->switchToRegister = true;
-		this->Close();
 	}
 	};
 }

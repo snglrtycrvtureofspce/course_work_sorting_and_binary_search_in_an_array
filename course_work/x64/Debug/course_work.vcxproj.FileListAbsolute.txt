@@ -82,3 +82,6 @@ C:\Users\asp1r\Desktop\course_work\course_work\x64\Debug\course_work.vcxproj.Cop
 C:\Users\asp1r\Desktop\course_work\course_work\x64\Debug\course_work.exe
 C:\Users\asp1r\Desktop\course_work\course_work\x64\Debug\stdole.dll
 C:\Users\asp1r\Desktop\course_work\course_work\x64\Debug\Microsoft.VisualStudio.Interop.dll
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\coursework.HELP.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\coursework.MainForm.be.resources
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\coursework.MainForm.en-US.resources
