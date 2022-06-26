@@ -87,6 +87,9 @@ namespace coursework {
 	private: System::Windows::Forms::Button^ button8;
 
 	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::TabControl^ tabControl1;
+	private: System::Windows::Forms::TabPage^ tabPage1;
+	private: System::Windows::Forms::TabPage^ tabPage2;
 
 
 
@@ -149,7 +152,11 @@ namespace coursework {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->menuStrip1->SuspendLayout();
+			this->tabControl1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -435,10 +442,31 @@ namespace coursework {
 			resources->ApplyResources(this->label10, L"label10");
 			this->label10->Name = L"label10";
 			// 
+			// tabControl1
+			// 
+			this->tabControl1->Controls->Add(this->tabPage1);
+			this->tabControl1->Controls->Add(this->tabPage2);
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
+			this->tabControl1->Name = L"tabControl1";
+			this->tabControl1->SelectedIndex = 0;
+			// 
+			// tabPage1
+			// 
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
+			this->tabPage1->Name = L"tabPage1";
+			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// tabPage2
+			// 
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
+			this->tabPage2->Name = L"tabPage2";
+			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->button8);
 			this->Controls->Add(this->label9);
@@ -469,6 +497,7 @@ namespace coursework {
 			this->Name = L"MainForm";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
+			this->tabControl1->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -563,7 +592,7 @@ namespace coursework {
 	private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // выход из программы
 		this->Close(); // закрытие формы
 	}
-	private: System::Void оѕрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void оѕрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // вывод окна справки программы
 		coursework::HELP helpform; // создаЄм переменную дл€ работы с формой
 		helpform.ShowDialog(); // обращаемс€ к форме и открываем еЄ
 	}
@@ -751,6 +780,10 @@ namespace coursework {
 					arr2[rows * i + j] = arr[i][j];
 				}
 			}
+			for (int i = 0; i < (rows * cols); i++) // цикл будет выполн€тьс€ до тех пор, пока он не пройдЄтс€ по всему массиву
+			{
+				this->textBox2->Text += arr2[i].ToString() + "\t"; // конвертаци€ элементов массива в строку и перенос в текстовое поле с добавлением управл€ющего символа табул€ции
+			}
 		}
 		catch (System::FormatException^ exception)
 		{
@@ -766,19 +799,20 @@ namespace coursework {
 		{
 			this->textBox2->Clear(); // очистка текстового окна
 			this->textBox3->Clear(); // очистка текстового окна
-			for (int i = 0; i < (rows * cols); i++) // цикл будет выполн€тьс€ до тех пор, пока он не пройдЄтс€ по всему массиву
-			{
-				this->textBox2->Text += arr2[i].ToString() + "\t"; // конвертаци€ элементов массива в строку и перенос в текстовое поле с добавлением управл€ющего символа табул€ции
-			}
 			if ((r < rows * cols) && (rows * cols > 0)) // проверка что размер массива больше нул€
 			{
-				arr2[r] = Convert::ToInt32(this->textBox5->Text); // конвертаци€ введЄнным пользоваталем ключа €чейки в целочисленное значение
+				arr2[r] = Convert::ToInt32(this->textBox5->Text); // конвертаци€ введЄнным пользоваталем числа в целочисленное значение
 				r++; // r += 1
 			}
 			else
 			{
 				MessageBox::Show("ћассив размерности [" + rows.ToString() + "]" + "[" + cols.ToString() + "] заполнен или не создан."); // вывод сообщени€ на экран
 			}
+			for (int i = 0; i < (rows * cols); i++) // цикл будет выполн€тьс€ до тех пор, пока он не пройдЄтс€ по всему массиву
+			{
+				this->textBox2->Text += arr2[i].ToString() + "\t"; // конвертаци€ элементов массива в строку и перенос в текстовое поле с добавлением управл€ющего символа табул€ции
+			}
+
 		}
 		catch (System::FormatException^ exception)
 		{
@@ -871,7 +905,7 @@ namespace coursework {
 		}
 	}
 
-	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) { // визуализаци€ бинарного дерева
 		Graphics^ panelGraphics = panel1->CreateGraphics();
 
 		int startX = 0, startY = 0;

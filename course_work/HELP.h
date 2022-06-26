@@ -72,7 +72,7 @@ namespace coursework {
 			this->Controls->Add(this->richTextBox1);
 			this->Name = L"HELP";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"HELP";
+			this->Text = L"Справка";
 			this->Load += gcnew System::EventHandler(this, &HELP::HELP_Load);
 			this->ResumeLayout(false);
 
