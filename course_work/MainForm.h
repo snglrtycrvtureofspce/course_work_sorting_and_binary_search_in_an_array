@@ -1,5 +1,4 @@
 #pragma once
-#pragma execution_character_set("utf-8")
 #include "User.h"
 #include "HELP.h"
 #include "BinaryTree.h"
