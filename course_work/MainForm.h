@@ -87,9 +87,9 @@ namespace coursework {
 	private: System::Windows::Forms::Button^ button8;
 
 	private: System::Windows::Forms::Label^ label10;
-	private: System::Windows::Forms::TabControl^ tabControl1;
-	private: System::Windows::Forms::TabPage^ tabPage1;
-	private: System::Windows::Forms::TabPage^ tabPage2;
+
+
+
 
 
 
@@ -152,11 +152,7 @@ namespace coursework {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->menuStrip1->SuspendLayout();
-			this->tabControl1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -442,31 +438,10 @@ namespace coursework {
 			resources->ApplyResources(this->label10, L"label10");
 			this->label10->Name = L"label10";
 			// 
-			// tabControl1
-			// 
-			this->tabControl1->Controls->Add(this->tabPage1);
-			this->tabControl1->Controls->Add(this->tabPage2);
-			resources->ApplyResources(this->tabControl1, L"tabControl1");
-			this->tabControl1->Name = L"tabControl1";
-			this->tabControl1->SelectedIndex = 0;
-			// 
-			// tabPage1
-			// 
-			resources->ApplyResources(this->tabPage1, L"tabPage1");
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->UseVisualStyleBackColor = true;
-			// 
-			// tabPage2
-			// 
-			resources->ApplyResources(this->tabPage2, L"tabPage2");
-			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->UseVisualStyleBackColor = true;
-			// 
 			// MainForm
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->Controls->Add(this->tabControl1);
 			this->Controls->Add(this->label10);
 			this->Controls->Add(this->button8);
 			this->Controls->Add(this->label9);
@@ -497,7 +472,6 @@ namespace coursework {
 			this->Name = L"MainForm";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
-			this->tabControl1->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -663,7 +637,7 @@ namespace coursework {
 		}
 		catch (System::FormatException^ exception)
 		{
-			MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
+			MessageBox::Show("Неверный формат числа", "Ошибка", MessageBoxButtons::OK); // вывод сообщения ошибки формата данных на экран
 		}
 		catch (System::Exception^ exception)
 		{
@@ -717,7 +691,11 @@ namespace coursework {
 		}
 		catch (System::FormatException^ exception)
 		{
-			MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
+			MessageBox::Show("Неверный формат числа", "Ошибка", MessageBoxButtons::OK); // вывод сообщения ошибки формата данных на экран
+		}
+		catch (System::NullReferenceException^ exception)
+		{
+			MessageBox::Show("Для начало создайте массив", "Ошибка", MessageBoxButtons::OK);
 		}
 		catch (System::Exception^ exception)
 		{
@@ -736,6 +714,7 @@ namespace coursework {
 				rows = 0; // зануляем размер строки
 				cols = 0; // зануляем размер столбца
 			}
+			r = 0;
 			this->rows = Convert::ToInt32(this->textBox1->Text); // конвертация введённым пользователем размера строки в целочисисленное значение
 			this->cols = Convert::ToInt32(this->textBox4->Text); // конвертация введённым пользователем размера столбца в целочисисленное значение
 			if (rows >= 31 || cols >= 31) // ограничение на размер строк и столбцов
@@ -787,7 +766,7 @@ namespace coursework {
 		}
 		catch (System::FormatException^ exception)
 		{
-			MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
+			MessageBox::Show("Неверный формат числа", "Ошибка", MessageBoxButtons::OK); // вывод сообщения ошибки формата данных на экран
 		}
 		catch (System::Exception^ exception)
 		{
@@ -816,7 +795,7 @@ namespace coursework {
 		}
 		catch (System::FormatException^ exception)
 		{
-			MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
+			MessageBox::Show("Неверный формат числа", "Ошибка", MessageBoxButtons::OK); // вывод сообщения ошибки формата данных на экран
 		}
 		catch (System::Exception^ exception)
 		{
@@ -897,59 +876,73 @@ namespace coursework {
 				MessageBox::Show(L"Осторожно! Ошибка преобразования"); // вывод сообщения на экран
 				return; // возвращаем
 			}
-			bTree->Search(number) ? MessageBox::Show(L"Элемент найден") : MessageBox::Show(L"Элемент не найден"); // тернарный оператор, если искомый элемент найден - выводим успех, если не найден - выводим неудачу
+			bTree->Search(number) ? MessageBox::Show("Элемент найден") : MessageBox::Show("Элемент не найден"); // тернарный оператор, если искомый элемент найден - выводим успех, если не найден - выводим неудачу
 		}
 		else
 		{
-			MessageBox::Show(L"Введите элемент для поиска!"); // вывод сообщения на экран
+			MessageBox::Show("Введите элемент для поиска!", "Ошибка", MessageBoxButtons::OK); // вывод сообщения на экран
 		}
 	}
 
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) { // визуализация бинарного дерева
-		Graphics^ panelGraphics = panel1->CreateGraphics();
-
-		int startX = 0, startY = 0;
-		int curX = 0, curY = 0;
-
-		for (int i = 0; i < rows * cols; i++)
-		{
-			bTree->AddItem(arr2[i]);
-		}
-
-		for (auto& item : bTree->PrintTree())
-		{
-			curX = item->theX;
-			curY = item->theY;
-
-
-			Label^ label = gcnew Label();
-			label->Font = gcnew System::Drawing::Font("verdana", 12);
-			label->Width = 40;
-			label->BackColor = Color::YellowGreen;
-
-			if (curX > panel1->Width - label->Width)
-				curX = panel1->Width - label->Width - 5;
-			if (curY < 0)
-				curY = 5;
-
-			label->Location = Point(curX, curY);
-			label->Text = Convert::ToString((int)item->Data);
-
-			if (startX != startY != 0)
+			try
 			{
-				panelGraphics->DrawLine(gcnew Pen(Color::Brown, 4), Point(startX, startY), Point(curX, curY));
-			}
-			panelGraphics->FillRectangle(Brushes::Black, curX - 2, curY - 2, 40, label->Height);
-			panel1->Controls->Add(label);
+				Graphics^ panelGraphics = panel1->CreateGraphics();
 
-			if (item->testRoot)
+				int startX = 0, startY = 0;
+				int curX = 0, curY = 0;
+				if (arr2 != nullptr)
+				{
+					for (int i = 0; i < rows * cols; i++)
+					{
+						bTree->AddItem(arr2[i]);
+					}
+				}
+				else
+				{
+					MessageBox::Show("Для начала создайте массив", "Внимание");
+				}
+				
+
+				for (auto& item : bTree->PrintTree())
+				{
+					curX = item->theX;
+					curY = item->theY;
+
+
+					Label^ label = gcnew Label();
+					label->Font = gcnew System::Drawing::Font("verdana", 12);
+					label->Width = 40;
+					label->BackColor = Color::YellowGreen;
+
+					if (curX > panel1->Width - label->Width)
+						curX = panel1->Width - label->Width - 5;
+					if (curY < 0)
+						curY = 5;
+
+					label->Location = Point(curX, curY);
+					label->Text = Convert::ToString((int)item->Data);
+
+					if (startX != startY != 0)
+					{
+						panelGraphics->DrawLine(gcnew Pen(Color::Brown, 4), Point(startX, startY), Point(curX, curY));
+					}
+					panelGraphics->FillRectangle(Brushes::Black, curX - 2, curY - 2, 40, label->Height);
+					panel1->Controls->Add(label);
+
+					if (item->testRoot)
+					{
+						startX = curX;
+						startY = curY;
+					}
+
+					richTextBox1->AppendText(String::Format("  {0}                    {1}\r\n", item->Data, item->Count));
+				}
+			}
+			catch (System::Exception^ exception)
 			{
-				startX = curX;
-				startY = curY;
+				MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
 			}
-
-			richTextBox1->AppendText(String::Format("  {0}                    {1}\r\n", item->Data, item->Count));
-		}
 	}
 	};
 }

@@ -1,9 +1,1 @@
-﻿  MainForm.cpp
-  main.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(438,21): warning C4101: exception: неиспользованная локальная переменная
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\RegisterForm.h(588,21): warning C4101: exception: неиспользованная локальная переменная
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\main.cpp(53,28): warning C4101: exception: неиспользованная локальная переменная
-  Создание кода...
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\main.cpp(57): warning C4715: WinMain: значение возвращается не при всех путях выполнения
-  HELP.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe
+﻿  course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe
