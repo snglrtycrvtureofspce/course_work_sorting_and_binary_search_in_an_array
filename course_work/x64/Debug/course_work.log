@@ -1,1 +1,24 @@
-﻿  course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe
+﻿  HELP.cpp
+  LoginForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(441,21): warning C4101: exception: неиспользованная локальная переменная
+  MainForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(640,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(694,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(698,42): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(770,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(798,35): warning C4101: exception: неиспользованная локальная переменная
+  RegisterForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\RegisterForm.h(586,21): warning C4101: exception: неиспользованная локальная переменная
+  main.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(441,21): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(640,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(694,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(698,42): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(770,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(798,35): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\RegisterForm.h(586,21): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\main.cpp(54,28): warning C4101: exception: неиспользованная локальная переменная
+  Создание кода...
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\main.cpp(58): warning C4715: WinMain: значение возвращается не при всех путях выполнения
+  HELP.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  course_work.vcxproj -> C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\x64\Debug\course_work.exe

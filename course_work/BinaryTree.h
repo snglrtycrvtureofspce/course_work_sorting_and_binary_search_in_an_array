@@ -1,7 +1,9 @@
 #pragma once
 #include <vector>
 #include <string>
-
+/*
+BinaryTree.h - представляет класс бинарного дерева, включая его методы визуализации
+*/
 template <class T>
 class BinaryTree
 {

@@ -1,5 +1,7 @@
 ﻿#pragma once
-
+/*
+User.h - имеет класс пользователя с переменными всех данных, нужен для реализации SQL базы
+*/
 using namespace System;
 
 public ref class User

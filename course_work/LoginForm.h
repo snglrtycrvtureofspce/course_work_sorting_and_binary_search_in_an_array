@@ -1,6 +1,9 @@
 #pragma once
 #include "User.h"
 #include "HELP.h"
+/*
+LoginForm.h содержит панель авторизации пользователей
+*/
 namespace coursework {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -8,10 +11,10 @@ namespace coursework {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	using namespace System::Data::SqlClient; // namespace to connect SQL database
+	using namespace System::Data::SqlClient; // пространство имён для подключения SQL базы
 
-	using namespace System::Globalization; // UICulture
-	using namespace System::Threading; // UICulture
+	using namespace System::Globalization; // использования пространства имён для локализации
+	using namespace System::Threading; // использования пространства имён для локализации
 
 
 	/// <summary>
@@ -20,7 +23,7 @@ namespace coursework {
 	public ref class LoginForm : public System::Windows::Forms::Form
 	{
 	public:
-		LoginForm(void)
+		LoginForm()
 		{
 			InitializeComponent();
 		}

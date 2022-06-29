@@ -1,32 +1,30 @@
 #pragma once
 #include "User.h"	
 #include "HELP.h"
+/*
+RegisterForm.h ñîäåğæèò ïàíåëü ğåãèñòğàöèè ïîëüçîâàòåëåé
+*/
 namespace coursework {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	using namespace System::Data::SqlClient; // namespace to connect SQL database
+	using namespace System::Data::SqlClient; // ïğîñòğàíñòâî èì¸í äëÿ ïîäêëş÷åíèÿ SQL áàçû
 
-	using namespace System::Globalization; // UICulture
-	using namespace System::Threading; // UICulture
+	using namespace System::Globalization; // èñïîëüçîâàíèÿ ïğîñòğàíñòâà èì¸í äëÿ ëîêàëèçàöèè
+	using namespace System::Threading; // èñïîëüçîâàíèÿ ïğîñòğàíñòâà èì¸í äëÿ ëîêàëèçàöèè
 	/// <summary>
 	/// Ñâîäêà äëÿ RegisterForm
 	/// </summary>
 	public ref class RegisterForm : public System::Windows::Forms::Form
 	{
 	public:
-		RegisterForm(void)
+		RegisterForm()
 		{
 			InitializeComponent();
-			//
-			//TODO: äîáàâüòå êîä êîíñòğóêòîğà
-			//
 		}
-
 	protected:
 		/// <summary>
 		/// Îñâîáîäèòü âñå èñïîëüçóåìûå ğåñóğñû.
@@ -247,18 +245,18 @@ namespace coursework {
 			// 
 			// àíãëèéñêèéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->àíãëèéñêèéToolStripMenuItem, L"àíãëèéñêèéToolStripMenuItem");
 			this->àíãëèéñêèéToolStripMenuItem->Name = L"àíãëèéñêèéToolStripMenuItem";
+			resources->ApplyResources(this->àíãëèéñêèéToolStripMenuItem, L"àíãëèéñêèéToolStripMenuItem");
 			// 
 			// ğóññêèéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->ğóññêèéToolStripMenuItem, L"ğóññêèéToolStripMenuItem");
 			this->ğóññêèéToolStripMenuItem->Name = L"ğóññêèéToolStripMenuItem";
+			resources->ApplyResources(this->ğóññêèéToolStripMenuItem, L"ğóññêèéToolStripMenuItem");
 			// 
 			// ğóññêèéToolStripMenuItem1
 			// 
-			resources->ApplyResources(this->ğóññêèéToolStripMenuItem1, L"ğóññêèéToolStripMenuItem1");
 			this->ğóññêèéToolStripMenuItem1->Name = L"ğóññêèéToolStripMenuItem1";
+			resources->ApplyResources(this->ğóññêèéToolStripMenuItem1, L"ğóññêèéToolStripMenuItem1");
 			// 
 			// pictureBox1
 			// 
@@ -298,105 +296,105 @@ namespace coursework {
 			// 
 			// menuStrip1
 			// 
-			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->ìåíşToolStripMenuItem,
 					this->îÏğîãğàììåToolStripMenuItem
 			});
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
 			// 
 			// ìåíşToolStripMenuItem
 			// 
-			resources->ApplyResources(this->ìåíşToolStripMenuItem, L"ìåíşToolStripMenuItem");
 			this->ìåíşToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->ëîêàëèçàöèÿToolStripMenuItem,
 					this->îôîğìëåíèåToolStripMenuItem, this->âûõîäToolStripMenuItem
 			});
 			this->ìåíşToolStripMenuItem->Name = L"ìåíşToolStripMenuItem";
+			resources->ApplyResources(this->ìåíşToolStripMenuItem, L"ìåíşToolStripMenuItem");
 			// 
 			// ëîêàëèçàöèÿToolStripMenuItem
 			// 
-			resources->ApplyResources(this->ëîêàëèçàöèÿToolStripMenuItem, L"ëîêàëèçàöèÿToolStripMenuItem");
 			this->ëîêàëèçàöèÿToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->àíãëèéñêèéToolStripMenuItem1,
 					this->ğóññêèéToolStripMenuItem2, this->ğóññêèéToolStripMenuItem3
 			});
 			this->ëîêàëèçàöèÿToolStripMenuItem->Name = L"ëîêàëèçàöèÿToolStripMenuItem";
+			resources->ApplyResources(this->ëîêàëèçàöèÿToolStripMenuItem, L"ëîêàëèçàöèÿToolStripMenuItem");
 			// 
 			// àíãëèéñêèéToolStripMenuItem1
 			// 
-			resources->ApplyResources(this->àíãëèéñêèéToolStripMenuItem1, L"àíãëèéñêèéToolStripMenuItem1");
 			this->àíãëèéñêèéToolStripMenuItem1->Name = L"àíãëèéñêèéToolStripMenuItem1";
+			resources->ApplyResources(this->àíãëèéñêèéToolStripMenuItem1, L"àíãëèéñêèéToolStripMenuItem1");
 			this->àíãëèéñêèéToolStripMenuItem1->Click += gcnew System::EventHandler(this, &RegisterForm::àíãëèéñêèéToolStripMenuItem1_Click);
 			// 
 			// ğóññêèéToolStripMenuItem2
 			// 
-			resources->ApplyResources(this->ğóññêèéToolStripMenuItem2, L"ğóññêèéToolStripMenuItem2");
 			this->ğóññêèéToolStripMenuItem2->Name = L"ğóññêèéToolStripMenuItem2";
+			resources->ApplyResources(this->ğóññêèéToolStripMenuItem2, L"ğóññêèéToolStripMenuItem2");
 			this->ğóññêèéToolStripMenuItem2->Click += gcnew System::EventHandler(this, &RegisterForm::ğóññêèéToolStripMenuItem2_Click);
 			// 
 			// ğóññêèéToolStripMenuItem3
 			// 
-			resources->ApplyResources(this->ğóññêèéToolStripMenuItem3, L"ğóññêèéToolStripMenuItem3");
 			this->ğóññêèéToolStripMenuItem3->Name = L"ğóññêèéToolStripMenuItem3";
+			resources->ApplyResources(this->ğóññêèéToolStripMenuItem3, L"ğóññêèéToolStripMenuItem3");
 			this->ğóññêèéToolStripMenuItem3->Click += gcnew System::EventHandler(this, &RegisterForm::ğóññêèéToolStripMenuItem3_Click);
 			// 
 			// îôîğìëåíèåToolStripMenuItem
 			// 
-			resources->ApplyResources(this->îôîğìëåíèåToolStripMenuItem, L"îôîğìëåíèåToolStripMenuItem");
 			this->îôîğìëåíèåToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
 				this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem,
 					this->ñòàíäàğòíûéToolStripMenuItem, this->ğàíäîìíûéÖâåòToolStripMenuItem, this->áåëûéToolStripMenuItem, this->÷¸ğíûéToolStripMenuItem,
 					this->êğàñíûéToolStripMenuItem
 			});
 			this->îôîğìëåíèåToolStripMenuItem->Name = L"îôîğìëåíèåToolStripMenuItem";
+			resources->ApplyResources(this->îôîğìëåíèåToolStripMenuItem, L"îôîğìëåíèåToolStripMenuItem");
 			// 
 			// âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem
 			// 
-			resources->ApplyResources(this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem, L"âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem");
 			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem->Name = L"âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem";
+			resources->ApplyResources(this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem, L"âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem");
 			this->âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::âûáğàòüÑàìîñòîÿòåëüíîToolStripMenuItem_Click);
 			// 
 			// ñòàíäàğòíûéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->ñòàíäàğòíûéToolStripMenuItem, L"ñòàíäàğòíûéToolStripMenuItem");
 			this->ñòàíäàğòíûéToolStripMenuItem->Name = L"ñòàíäàğòíûéToolStripMenuItem";
+			resources->ApplyResources(this->ñòàíäàğòíûéToolStripMenuItem, L"ñòàíäàğòíûéToolStripMenuItem");
 			this->ñòàíäàğòíûéToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::ñòàíäàğòíûéToolStripMenuItem_Click);
 			// 
 			// ğàíäîìíûéÖâåòToolStripMenuItem
 			// 
-			resources->ApplyResources(this->ğàíäîìíûéÖâåòToolStripMenuItem, L"ğàíäîìíûéÖâåòToolStripMenuItem");
 			this->ğàíäîìíûéÖâåòToolStripMenuItem->Name = L"ğàíäîìíûéÖâåòToolStripMenuItem";
+			resources->ApplyResources(this->ğàíäîìíûéÖâåòToolStripMenuItem, L"ğàíäîìíûéÖâåòToolStripMenuItem");
 			this->ğàíäîìíûéÖâåòToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::ğàíäîìíûéÖâåòToolStripMenuItem_Click);
 			// 
 			// áåëûéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->áåëûéToolStripMenuItem, L"áåëûéToolStripMenuItem");
 			this->áåëûéToolStripMenuItem->Name = L"áåëûéToolStripMenuItem";
+			resources->ApplyResources(this->áåëûéToolStripMenuItem, L"áåëûéToolStripMenuItem");
 			this->áåëûéToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::áåëûéToolStripMenuItem_Click);
 			// 
 			// ÷¸ğíûéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->÷¸ğíûéToolStripMenuItem, L"÷¸ğíûéToolStripMenuItem");
 			this->÷¸ğíûéToolStripMenuItem->Name = L"÷¸ğíûéToolStripMenuItem";
+			resources->ApplyResources(this->÷¸ğíûéToolStripMenuItem, L"÷¸ğíûéToolStripMenuItem");
 			this->÷¸ğíûéToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::÷¸ğíûéToolStripMenuItem_Click);
 			// 
 			// êğàñíûéToolStripMenuItem
 			// 
-			resources->ApplyResources(this->êğàñíûéToolStripMenuItem, L"êğàñíûéToolStripMenuItem");
 			this->êğàñíûéToolStripMenuItem->Name = L"êğàñíûéToolStripMenuItem";
+			resources->ApplyResources(this->êğàñíûéToolStripMenuItem, L"êğàñíûéToolStripMenuItem");
 			this->êğàñíûéToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::êğàñíûéToolStripMenuItem_Click);
 			// 
 			// âûõîäToolStripMenuItem
 			// 
-			resources->ApplyResources(this->âûõîäToolStripMenuItem, L"âûõîäToolStripMenuItem");
 			this->âûõîäToolStripMenuItem->Name = L"âûõîäToolStripMenuItem";
+			resources->ApplyResources(this->âûõîäToolStripMenuItem, L"âûõîäToolStripMenuItem");
 			this->âûõîäToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::âûõîäToolStripMenuItem_Click);
 			// 
 			// îÏğîãğàììåToolStripMenuItem
 			// 
-			resources->ApplyResources(this->îÏğîãğàììåToolStripMenuItem, L"îÏğîãğàììåToolStripMenuItem");
 			this->îÏğîãğàììåToolStripMenuItem->Name = L"îÏğîãğàììåToolStripMenuItem";
+			resources->ApplyResources(this->îÏğîãğàììåToolStripMenuItem, L"îÏğîãğàììåToolStripMenuItem");
 			this->îÏğîãğàììåToolStripMenuItem->Click += gcnew System::EventHandler(this, &RegisterForm::îÏğîãğàììåToolStripMenuItem_Click);
 			// 
 			// RegisterForm

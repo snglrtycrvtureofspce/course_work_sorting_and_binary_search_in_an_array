@@ -2,53 +2,54 @@
 #include "LoginForm.h"
 #include "MainForm.h"
 #include "RegisterForm.h"
-
-using namespace coursework;
+/*
+main.cpp содержит обработчики событий основного окна
+программы и другие вспомогательные функции
+*/
+using namespace coursework; // использование пространства имён coursework
 
 [STAThreadAttribute]
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	try
 	{
-		Application::EnableVisualStyles();
-		Application::SetCompatibleTextRenderingDefault(false);
-		User^ user = nullptr;
-		while (true)
+		Application::EnableVisualStyles(); // визуальные стили для приложения
+		Application::SetCompatibleTextRenderingDefault(false); // обеспечения визуальной совместимости между элементами управления Windows Forms
+		User^ user = nullptr; // зануляем указатель
+		while (true) // пока истина
 		{
-			coursework::LoginForm loginForm;
-			loginForm.ShowDialog();
+			coursework::LoginForm loginForm; // создаём переменную для обращения к форме
+			loginForm.ShowDialog(); // показать форму логина
 			if (loginForm.switchToRegister)
 			{
-				// show the register form
-				coursework::RegisterForm registerForm;
-				registerForm.ShowDialog();
+				coursework::RegisterForm registerForm; // создаём переменную для обращения к форме
+				registerForm.ShowDialog(); // показать форму регистрации
 				if (registerForm.switchToLogin)
 				{
-					continue;
+					continue; // продолжаем
 				}
 				else
 				{
 					user = registerForm.user;
-					break;
+					break; // прерываем
 				}
 			}
 			else
 			{
 				user = loginForm.user;
-				break;
+				break; // прерываем
 			}
 		}
-		if (user != nullptr)
+		if (user != nullptr) // пока не равен нулевому указателю
 		{
-			coursework::MainForm mainForm(user);
-			Application::Run(% mainForm);
+			coursework::MainForm mainForm(user); // создаём перменную с параметром формы для дальнейшего обращения к ней
+			Application::Run(% mainForm); // запускаем форму
 		}
 		else
 		{
-			Application::Exit();
-			//	MessageBox::Show("Authentication Cancelled", "Cancelled", MessageBoxButtons::OK);
+			Application::Exit(); // закрытие окна и выброс приложения из памяти
 		}
-		return 0;
+		return 0; // возвращаем
 	}
 	catch (System::Exception^ exception)
 	{

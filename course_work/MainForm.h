@@ -3,7 +3,10 @@
 #include "HELP.h"
 #include "BinaryTree.h"
 #include "functions.h"
-namespace coursework {
+/*
+MainForm.h - основное окно программы
+*/
+namespace coursework { // использование пространства имЄн coursework
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -12,9 +15,8 @@ namespace coursework {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	using namespace System::Globalization; // UICulture
-	using namespace System::Threading; // UICulture
-
+	using namespace System::Globalization; // использовани€ пространства имЄн дл€ локализации
+	using namespace System::Threading; // использовани€ пространства имЄн дл€ локализации
 	/// <summary>
 	/// —водка дл€ MainForm
 	/// </summary>
@@ -707,6 +709,7 @@ namespace coursework {
 		{
 			this->textBox2->Clear(); // очистка текстового окна
 			this->textBox3->Clear(); // очистка текстового окна
+			this->textBox5->Clear(); // очистка текстового окна
 			if (arr != nullptr) // если участок в ƒќќѕ уже выделен
 			{
 				delete[] arr; // уничтожение массива
@@ -791,7 +794,6 @@ namespace coursework {
 			{
 				this->textBox2->Text += arr2[i].ToString() + "\t"; // конвертаци€ элементов массива в строку и перенос в текстовое поле с добавлением управл€ющего символа табул€ции
 			}
-
 		}
 		catch (System::FormatException^ exception)
 		{

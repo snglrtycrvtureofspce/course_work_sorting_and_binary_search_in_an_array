@@ -1,5 +1,7 @@
 #pragma once
-
+/*
+HELP.h содержит панель справки программы
+*/
 namespace coursework {
 
 	using namespace System;
@@ -79,7 +81,7 @@ namespace coursework {
 		}
 #pragma endregion
 	private: System::Void HELP_Load(System::Object^ sender, System::EventArgs^ e) {
-		richTextBox1->Text = File::ReadAllText("HelpRU.txt");
+		richTextBox1->Text = File::ReadAllText("HelpRU.txt"); // чтение справки из файла
 	}
 	};
 }
