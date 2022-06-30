@@ -63,7 +63,7 @@ Q: How can I change the language or design?
 <br>A: Press the menu button in the upper right corner of the screen.
 
 Q: The program gives a critical error on startup!
-<br>A: Make sure you have installed .NET Framework v2.0 or newer.
+<br>A: Make sure you have installed .NET Framework v4.0 or newer.
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
@@ -135,7 +135,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 <br>О: Нажать кнопку меню в правом верхнем углу экрана.
 
 В: Программа выдаёт критическую ошибку при запуске!
-<br>О: Убедитесь что вы установили .NET Framework v2.0 или новее.
+<br>О: Убедитесь что вы установили .NET Framework v4.0 или новее.
 ## Лицензия
 
 Этот проект находится под лицензией GNU General Public License v3.0 - смотрите [LICENSE.md](LICENSE.md) файл, чтобы узнать подробности
