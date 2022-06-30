@@ -57,7 +57,7 @@ Q: How to enter the program window?
 <br>A: Pass user authorization and authentication.
 
 Q: How to open help?
-<br>About: /////////////////////////.
+<br>A: Press the About button
 
 Q: How can I change the language or design?
 <br>A: Press the menu button in the upper right corner of the screen.
@@ -129,7 +129,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 <br>О: Пройти авторизацию и аутентификацию пользователя.
 
 В: Как открыть справку?
-<br>О: /////////////////////////.
+<br>О: Нажать на кнопку О программе
 
 В: Как сменить язык или оформление?
 <br>О: Нажать кнопку меню в правом верхнем углу экрана.
