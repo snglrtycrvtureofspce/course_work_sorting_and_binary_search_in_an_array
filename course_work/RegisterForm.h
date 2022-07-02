@@ -1,6 +1,6 @@
 #pragma once
-#include "User.h"	
-#include "HELP.h"
+#include "User.h" // Подключение заголовочного файла 
+#include "HELP.h" // Подключение заголовочного файла
 /*
 RegisterForm.h содержит панель регистрации пользователей
 */

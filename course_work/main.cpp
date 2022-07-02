@@ -1,14 +1,14 @@
-﻿#include <Windows.h>
-#include "LoginForm.h"
-#include "MainForm.h"
-#include "RegisterForm.h"
+﻿#include <Windows.h> // Подключение библиоткеи Windows.h для работы оконных форм
+#include "LoginForm.h" // Подключение заголовочного файла
+#include "MainForm.h" // Подключение заголовочного файла
+#include "RegisterForm.h" // Подключение заголовочного файла
 /*
 main.cpp содержит обработчики событий основного окна
 программы и другие вспомогательные функции
 */
 using namespace coursework; // использование пространства имён coursework
 
-[STAThreadAttribute]
+[STAThreadAttribute] // Указанание атрибута потока однопоточного контейнера
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	try

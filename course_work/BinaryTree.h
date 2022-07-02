@@ -1,6 +1,6 @@
 #pragma once
-#include <vector>
-#include <string>
+#include <vector> // Подключение заголовочного файла
+#include <string> // Подключение заголовочного файла
 /*
 BinaryTree.h - представляет класс бинарного дерева, включая его методы визуализации
 */

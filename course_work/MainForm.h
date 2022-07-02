@@ -1,8 +1,8 @@
 #pragma once
-#include "User.h"
-#include "HELP.h"
-#include "BinaryTree.h"
-#include "functions.h"
+#include "User.h" // Подключение заголовочного файла
+#include "HELP.h" // Подключение заголовочного файла
+#include "BinaryTree.h" // Подключение заголовочного файла
+#include "functions.h" // Подключение заголовочного файла
 /*
 MainForm.h - основное окно программы
 */
@@ -830,7 +830,7 @@ namespace coursework { // использование пространства имён coursework
 		}
 	}
 	private: System::Void записьToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) { // запись файла
-		StreamWriter^ f = gcnew StreamWriter("test.txt", true); // создаём переменную для работы с файлами и сразу же создаём файл для работы
+		StreamWriter^ f = gcnew StreamWriter("test.txt", false); // создаём переменную для работы с файлами и сразу же создаём файл для работы
 		f->Write(textBox2->Text); // записываем в файл текст из текстового поля
 		f->Close(); // закрываем файл
 		MessageBox::Show(this, "Файл успешно сохранён", "Сообщение", MessageBoxButtons::OK, MessageBoxIcon::Information); // вывод сообщения на экран
@@ -846,30 +846,6 @@ namespace coursework { // использование пространства имён coursework
 			   bTree->Clear(); // очистка бинарного дерева
 		   }
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) { // бинарный поиск
-		//try
-		//{
-		//	functions second; // объявление экземпляра структуры
-		//	int key = 0; // целочисленный ключ ячейки, т.е. искомая переменная
-		//	int index = 0; // целочисленный индекс ячейки с искомым значением
-		//	key = Convert::ToInt32(this->textBox6->Text); // конвертация введённым пользоваталем ключа ячейки в целочисленное значение
-		//	index = second.Search_Binary(arr2, 0, rows * cols, key); // функция бинарного поиска
-		//	if (index >= 0) // если индекс больше или равен нулю
-		//	{
-		//		MessageBox::Show("Индекс элемента " + key + " в массиве равен: " + index); // вывод сообщения на экран
-		//	}
-		//	else // иначе
-		//	{
-		//		MessageBox::Show("Извините, но такого элемента в массиве нет"); // вывод сообщения на экран
-		//	}
-		//}
-		//catch (System::FormatException^ exception)
-		//{
-		//	MessageBox::Show(exception->Message); // вывод сообщения ошибки формата данных на экран
-		//}
-		//catch (System::Exception^ exception)
-		//{
-		//	MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
-		//}
 		if (textBox6->Text->Length != 0) // проверка на то что длина текстового окна не равна нулю
 		{
 			int number = 0; // инициализируем переменную целочисленного типа
@@ -887,64 +863,54 @@ namespace coursework { // использование пространства имён coursework
 	}
 
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) { // визуализация бинарного дерева
-			try
+		try
+		{
+			Graphics^ panelGraphics = panel1->CreateGraphics();
+			int startX = 0, startY = 0;
+			int curX = 0, curY = 0;
+			if (arr2 != nullptr)
 			{
-				Graphics^ panelGraphics = panel1->CreateGraphics();
-
-				int startX = 0, startY = 0;
-				int curX = 0, curY = 0;
-				if (arr2 != nullptr)
+				for (int i = 0; i < rows * cols; i++)
 				{
-					for (int i = 0; i < rows * cols; i++)
-					{
-						bTree->AddItem(arr2[i]);
-					}
-				}
-				else
-				{
-					MessageBox::Show("Для начала создайте массив", "Внимание");
-				}
-				
-
-				for (auto& item : bTree->PrintTree())
-				{
-					curX = item->theX;
-					curY = item->theY;
-
-
-					Label^ label = gcnew Label();
-					label->Font = gcnew System::Drawing::Font("verdana", 12);
-					label->Width = 40;
-					label->BackColor = Color::YellowGreen;
-
-					if (curX > panel1->Width - label->Width)
-						curX = panel1->Width - label->Width - 5;
-					if (curY < 0)
-						curY = 5;
-
-					label->Location = Point(curX, curY);
-					label->Text = Convert::ToString((int)item->Data);
-
-					if (startX != startY != 0)
-					{
-						panelGraphics->DrawLine(gcnew Pen(Color::Brown, 4), Point(startX, startY), Point(curX, curY));
-					}
-					panelGraphics->FillRectangle(Brushes::Black, curX - 2, curY - 2, 40, label->Height);
-					panel1->Controls->Add(label);
-
-					if (item->testRoot)
-					{
-						startX = curX;
-						startY = curY;
-					}
-
-					richTextBox1->AppendText(String::Format("  {0}                    {1}\r\n", item->Data, item->Count));
+					bTree->AddItem(arr2[i]);
 				}
 			}
-			catch (System::Exception^ exception)
+			else
 			{
-				MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
+				MessageBox::Show("Для начала создайте массив", "Внимание");
 			}
+			for (auto& item : bTree->PrintTree())
+			{
+				curX = item->theX;
+				curY = item->theY;
+				Label^ label = gcnew Label();
+				label->Font = gcnew System::Drawing::Font("verdana", 12);
+				label->Width = 40;
+				label->BackColor = Color::YellowGreen;
+				if (curX > panel1->Width - label->Width)
+					curX = panel1->Width - label->Width - 5;
+				if (curY < 0)
+					curY = 5;
+				label->Location = Point(curX, curY);
+				label->Text = Convert::ToString((int)item->Data);
+				if (startX != startY != 0)
+				{
+					panelGraphics->DrawLine(gcnew Pen(Color::Brown, 4), Point(startX, startY), Point(curX, curY));
+				}
+				panelGraphics->FillRectangle(Brushes::Black, curX - 2, curY - 2, 40, label->Height);
+				panel1->Controls->Add(label);
+				if (item->testRoot)
+				{
+					startX = curX;
+					startY = curY;
+				}
+				richTextBox1->AppendText(String::Format("  {0}                    {1}\r\n", item->Data, item->Count));
+			}
+		}
+		catch (System::Exception^ exception)
+		{
+			MessageBox::Show(exception->Message); // вывод сообщения ошибки на экран
+		}
 	}
 	};
 }

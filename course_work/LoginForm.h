@@ -1,6 +1,6 @@
 #pragma once
-#include "User.h"
-#include "HELP.h"
+#include "User.h" // ѕодключение заголовочного файла
+#include "HELP.h" // ѕодключение заголовочного файла
 /*
 LoginForm.h содержит панель авторизации пользователей
 */
@@ -400,6 +400,7 @@ namespace coursework {
 		this->switchToRegister = true; // инициализируем переменную истиной (1), алгоритм активизируетс€
 		this->Close(); // закрытие формы
 	}
+
 		   // ќписание алгоритма логина
 	public: User^ user = nullptr; // глобальна€ переменна€ класса пользователь ("User.h"), изначально инициализируем как нулевой указатель
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -415,12 +416,10 @@ namespace coursework {
 			String^ connString = "Data Source=localhost\\sqlexpress;Initial Catalog=courseWORK;Integrated Security=True"; // инициализируем переменную строкового класса адресом подключени€ к базе данных
 			SqlConnection sqlConn(connString); // задаЄм адрес дл€ подключени€ к базе данных
 			sqlConn.Open(); // открываем соединение с базой данных
-
 			String^ sqlQuery = "SELECT * FROM users WHERE email=@email AND password=@password;";
 			SqlCommand command(sqlQuery, % sqlConn);
 			command.Parameters->AddWithValue("@email", email);
 			command.Parameters->AddWithValue("@password", password);
-
 			SqlDataReader^ reader = command.ExecuteReader();
 			if (reader->Read())
 			{

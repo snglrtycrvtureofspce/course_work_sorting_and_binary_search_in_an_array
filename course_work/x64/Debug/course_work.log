@@ -1,6 +1,5 @@
-﻿  HELP.cpp
-  LoginForm.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(441,21): warning C4101: exception: неиспользованная локальная переменная
+﻿  LoginForm.cpp
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(440,21): warning C4101: exception: неиспользованная локальная переменная
   MainForm.cpp
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(640,35): warning C4101: exception: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(694,35): warning C4101: exception: неиспользованная локальная переменная
@@ -10,7 +9,7 @@ C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\M
   RegisterForm.cpp
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\RegisterForm.h(586,21): warning C4101: exception: неиспользованная локальная переменная
   main.cpp
-C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(441,21): warning C4101: exception: неиспользованная локальная переменная
+C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\LoginForm.h(440,21): warning C4101: exception: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(640,35): warning C4101: exception: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(694,35): warning C4101: exception: неиспользованная локальная переменная
 C:\Users\asp1r\Documents\asp1rant3\GitHub Repositories\course_work\course_work\MainForm.h(698,42): warning C4101: exception: неиспользованная локальная переменная
